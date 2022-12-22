@@ -8,6 +8,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
+  url: 'https://zacjones.dev',
   integrations: [image({
     serviceEntryPoint: '@astrojs/image/sharp'
   }), tailwind()]

@@ -1,7 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import HomePageCard from '../components/HomePageCard.astro';
-import Nav from '../components/Nav.astro';
 import { Image } from '@astrojs/image/components';
 
 let featuredNotes = [{
@@ -25,7 +24,6 @@ let featuredNotes = [{
 ---
 
 <Layout title="Zac's digital garden">
-  <Nav />
     <div class="sm:flex sm:flex-row sm:justify-between sm:mt-4 sm:mb-12 sm:overflow-hidden sm:relative mx-auto">
     <div class="w-[23em] mx-auto sm:mx-0">
       <Image
