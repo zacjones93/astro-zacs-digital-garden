@@ -1,0 +1,21 @@
+---
+export interface Props {
+	note: string;
+	description: string;
+  image: string;
+}
+
+const { note, description, image } = Astro.props;
+---
+
+<div class=" w-72 h-80 p-4 m-2 bg-card-background border border-primary rounded">
+  <div>
+  <img class="w-12 block mx-auto" src={image}>
+  <h1 class="w-fit mx-auto font-bold text-4xl my-6 text-color-text">
+    {note}
+  </h1>
+  <p class="h-28 text-xl sm:text-lg leading-7 mt-4 text-center text-color-text">
+    {description}
+  </p>
+  </div>
+</div>
