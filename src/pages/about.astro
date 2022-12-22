@@ -1,12 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+const title = "About Me"
 ---
   <a href="/">Home</a>
   <a href="/about">About</a>
   <a href="/blog">Blog</a>
-<Layout title="Welcome to Astro.">
-
+<Layout title={title}>
 	<main>
 		<h1><span class="text-gradient">About Me</span></h1>
 	</main>
