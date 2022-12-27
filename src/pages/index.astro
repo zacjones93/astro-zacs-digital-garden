@@ -2,29 +2,36 @@
 import Layout from '@layouts/Layout.astro';
 import HomePageCard from '@components/HomePageCard.astro';
 import { Image } from '@astrojs/image/components';
+import InternalLink from '@components/InternalLink.astro';
+import ExternalLink from '@components/ExternalLink.astro';
 
 let featuredNotes = [{
-  note: "[[Design]]",
+  note: "Design",
   image: "/images/logo-small.png",
   description: "Crafting intent through whatever medium you find yourself in whether it's UI, learning design, or other."
 }, {
-  note: "[[Business]]", 
+  note: "Business", 
   image: "/images/logo-small.png", 
   description: "The art of making money, mostly online, and everything that entails."
 }, {
   
-  note: "[[Dev]]", 
+  note: "Dev", 
   image: "/images/logo-small.png", 
   description: "Building websites and programs with various languages and techniques."
 }, {
-  note: "[[crossfit]]", 
+  note: "CrossFit", 
   image: "/images/logo-small.png", 
-  description: "The way I achieve [[health]] and increase my [[healthspan]]."
+  description: "The way I achieve health and increase my healthspan."
 }]
+
+let articles = ["Utilize the Implicit Grid for consistent design of UI Elements", "Understanding by Design", "High Quality Screen Casts Are Well-Scoped with a Single Take-Away", "Sales Safari", "Handle Multiple Inputs in React with ES6 Computed Property Name", "Christopher Alexanders System Design"]
+
+let projects 
+let books = ["Badass Making Users Awesome", "The Mom Test",]
 ---
 
 <Layout title="Zac's digital garden">
-    <div class="sm:flex sm:flex-row sm:justify-between sm:mt-4 sm:mb-12 sm:overflow-hidden sm:relative mx-auto">
+  <div class="sm:flex sm:flex-row sm:justify-between sm:mt-4 sm:mb-12 sm:overflow-hidden sm:relative mx-auto">
     <div class="w-[23em] mx-auto sm:mx-0">
       <Image
           class="block sm:hidden mx-auto"
@@ -73,30 +80,50 @@ let featuredNotes = [{
   </div>
 
   <div class="flex flex-col sm:flex-row">
-  <div class="w-fit justify-self-center">
-    <h2 class="mx-auto w-fit sm:mx-0 font-semibold text-2xl text-color-text">Articles & Prominent Notes</h2>
-    <ul class=" m-4 text-xl sm:text-lg leading-7 text-color-text">
-      <li>[[Utilize the Implicit Grid for consistent design of UI Elements]]</li>
-      <li>[[Understanding by Design]]</li>
-      <li>[[High Quality Screen Casts Are Well-Scoped with a Single Take-Away]]</li>
-      <li>[[Sales Safari]]</li>
-      <li>[[Handle Multiple Inputs in React with ES6 Computed Property Name]]</li>
-      <li>[[Christopher Alexanders System Design]]</li>
-    </ul>
+    <div class="w-fit justify-self-center">
+      <h2 class="mx-auto w-fit sm:mx-0 font-semibold text-2xl text-color-text">Articles & Prominent Notes</h2>
+      <ul class=" m-4 text-xl sm:text-lg leading-7 text-color-text">
+        {articles.map(article => (
+          <li class="my-2">- <InternalLink title={article}/></li>
+        ))}
+      </ul>
+    </div>
+    <div class="w-fit justify-self-center">
+      <h2 class="mx-auto w-fit sm:mx-0 font-semibold text-2xl text-color-text">Projects</h2>
+      <ul class=" m-4 text-xl sm:text-lg leading-7 text-color-text">
+        <li class="my-2">- egghead.io -- <ExternalLink href="https://github.com/eggheadio/egghead-next/pull/602" title="PR showcase pulling Sanity data into a Next.js site" /> </li>
+        <li class="my-2">- egghead-kenv -- <ExternalLink href="https://github.com/zacjones93/egghead-kenv" title="collection of internal team scripts and tools"></ExternalLink></li>
+      </ul>
+      <h2 class="mx-auto w-fit sm:mx-0 font-semibold text-2xl text-left text-color-text">Book Reviews & Notes</h2>
+      <ul class=" m-4 text-xl sm:text-lg leading-7 text-color-text">
+        {books.map(book => (
+          <li class="my-2">- <InternalLink title={book}/></li>
+        ))}
+      </ul>
+    </div>
   </div>
-  <div class="w-fit justify-self-center">
-    <h2 class="mx-auto w-fit sm:mx-0 font-semibold text-2xl text-color-text">Projects</h2>
-    <ul class=" m-4 text-xl sm:text-lg leading-7 text-color-text">
-      <li>egghead.io -- <a href="https://github.com/eggheadio/egghead-next/pull/602">PR showcase pulling Sanity data into a Next.js site</a></li>
-      <li>egghead-kenv -- <a href="https://github.com/zacjones93/egghead-kenv">collection of internal team scripts and tools</a></li>
-      <li>[[shoulditrain.today]]</li>
-    </ul>
-    <h2 class="mx-auto w-fit sm:mx-0 font-semibold text-2xl text-left text-color-text">Book Reviews & Notes</h2>
-    <ul class=" m-4 text-xl sm:text-lg leading-7 text-color-text">
-      <li><a class="no-underline border-b-2 border-solid border-b-primary p-[2px] rounded hover:bg-primary">[[Badass Making Users Awesome]]</a></li>
-      <li>[[The Mom Test]]</li>
-    </ul>
-  </div>
-  </div>
-
 </Layout>
+
+<style>
+
+.external-link {
+  text-decoration: none;
+  border-bottom: 1px solid $color-border;
+  color: $color-text;
+  padding: 2px;
+  border-radius: $border-radius;
+}
+.external-link:hover {
+  color: black !important;
+  background: $color-border;
+  border-bottom: 1px solid $color-border;
+}
+.external-link:after {
+  position: relative;
+  top: -0.5em;
+  font-size: 0.7em;
+  content: "↗";
+  color: #aaaaaa;
+}
+
+</style>

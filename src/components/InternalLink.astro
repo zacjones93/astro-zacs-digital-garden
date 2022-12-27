@@ -1,0 +1,20 @@
+---
+export interface Props {
+	title: string;
+	href?: string;
+}
+
+import defaultTitleToURLPath from '@lib/defaultTitleToURLPath'
+
+const { href, title } = Astro.props;
+
+let myHref = href ? href : defaultTitleToURLPath(title)
+
+---
+
+<a 
+  class="no-underline border-b-2 border-solid border-b-primary p-[2px] rounded hover:bg-primary" 
+  href={myHref}
+>
+    {title}
+</a>

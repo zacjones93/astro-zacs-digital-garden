@@ -5,6 +5,8 @@ export interface Props {
   image: string;
 }
 
+import InternalLink from '@components/InternalLink.astro'
+
 const { note, description, image } = Astro.props;
 ---
 
@@ -12,7 +14,7 @@ const { note, description, image } = Astro.props;
   <div>
   <img class="w-12 block mx-auto" src={image}>
   <h1 class="w-fit mx-auto font-bold text-4xl my-6 text-color-text">
-    {note}
+    <InternalLink title={note} />
   </h1>
   <p class="h-28 text-xl sm:text-lg leading-7 mt-4 text-center text-color-text">
     {description}
