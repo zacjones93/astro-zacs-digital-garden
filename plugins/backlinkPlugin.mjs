@@ -7,10 +7,10 @@ const isDoubleBracket = (text) => {
     return doubleBrackets.test(text);
 };
 
-const defaultTitleToURLPath = (seedsPath = "/notes/", title) => {
+const defaultTitleToURLPath = (notesPath = "/notes/", title) => {
     let segments = title.split("|");
     const slugifiedTitle = slugify(segments[0].toLowerCase());
-    return `${seedsPath}${slugifiedTitle}`;
+    return `${notesPath}${slugifiedTitle}`;
 };
 
 const formatBracketLinks = (text, titleToUrl) => {
@@ -23,7 +23,7 @@ const formatBracketLinks = (text, titleToUrl) => {
 
 
 export const addDoubleBrackets = (markdownAst, options) => {
-    const titleToURL = defaultTitleToURLPath.bind(null, options.seedsPath);
+    const titleToURL = defaultTitleToURLPath.bind(null, options.notesPath);
 
     const definitions = {};
     visit(markdownAst, 'text', (node, index, parent) => {
