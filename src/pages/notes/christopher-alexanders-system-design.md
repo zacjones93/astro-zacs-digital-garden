@@ -75,7 +75,7 @@ Alexander wants to create a better world.
 
 ### Example of soviet building vs Alexander designed building
 
-![soviet building vs beautify building](./01-soviet-vs-alex.png)
+![soviet building vs beautify building](/note-images/01-soviet-vs-alex.png)
 
 There's no structure with the soviet building. It's designed for a narrow set of actions. You can enter the building and go to your room
 
@@ -89,7 +89,7 @@ Those activities won't happen with the soviet building
 
 ### Modern planter in a plaza
 
-![planter](./02-planter.png)
+![planter](/note-images/02-planter.png)
 
 Not very alive. Not much Form and not much action here.
 Not much in activities that could take place at this plaza
@@ -98,7 +98,7 @@ very narrow edging. you could maybe set your coffee there.
 
 To make it more alive - you change the Form and widen the amount of activities that can happen around it.
 
-![planter adjusted](./03-planter-adjusted.png)
+![planter adjusted](/note-images/03-planter-adjusted.png)
 
 The sitting isn't the important thing. The different occasions in which they would sit is.. Could wait for someone, or sit and chat with a friend, could take a phone call there to escape the office, enjoy the fresh air, take a break and have a coffee.. a flourishing possibilities
 
@@ -143,7 +143,7 @@ Patterns and pattern languages.
 
 Software has used it but to a small extent.
 
-![plaza](./04-plaza.png)
+![plaza](/note-images/04-plaza.png)
 Shows an amazing network of Centers. It's aesthetically pleasing and theres many functions that happen here. So much Life.
 
 How do you get here?
@@ -177,7 +177,7 @@ Generic definition of a Center. but it gives you an essential aspect of the rela
 
 - Farm house kitchen example
 
-![farm kitchen](./05-farm-kitchen.png)
+![farm kitchen](/note-images/05-farm-kitchen.png)
 
 Window - in a way a pattern
 Garden - also a pattern
@@ -218,7 +218,7 @@ The field of relationships in a project is too complex. We need a high-level way
 
 - Pattern Language for building a university
 
-![Build Classroom](./06-build-classroom.png)
+![Build Classroom](/note-images/06-build-classroom.png)
 
 This language in each case generates different designs. There are whole classes of designs that are created by each class
 
@@ -239,7 +239,7 @@ Well get a different Form Context Fit depending on the language we choose.
 
 ## Software case-study
 
-![Basecamp case-study](./08-basecamp-casestudy.png)
+![Basecamp case-study](/note-images/08-basecamp-casestudy.png)
 Basecamp people of the project
 
 may strike us as the soviet style building. uniformity of scale. not much interesting structure going on.
@@ -251,7 +251,7 @@ There are activities here that would like to be achieved.
 Who just has access vs who is really involved here?
 
 Potential for better structure
-![Design with life](./09-design-with-life.png)
+![Design with life](/note-images/09-design-with-life.png)
 
 levels of repetition (one property to a Center)
 
@@ -271,7 +271,7 @@ More hierarchy, more meaningful.
 
 Enter Shape Up 😄
 
-![pattern language](./10-pattern-language.png)
+![pattern language](/note-images/10-pattern-language.png)
 
 This level of abstraction gives developers the freedom to solve the problem given the facts on the ground while directing them at a high level.
 
