@@ -1,6 +1,6 @@
 ---
 title: 🍷 Wine Tasting
-image: assets/images/hermes-rivera-aK6WGqxyHFw-unsplash.jpg
+image: /images/hermes-rivera-aK6WGqxyHFw-unsplash.jpg
 ---
 Where [[Micah Meadowcroft]] and I learn wine.
 

@@ -1,6 +1,6 @@
 ---
 title: Deadlift Squat E90
-image: ./deadlift.jpg
+image: /note-images/deadlift.jpg
 tags: CrossFit
 ---
 

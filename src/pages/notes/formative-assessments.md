@@ -8,4 +8,4 @@ tags: design
 Show how a learner is either getting it or where they went wrong. The answer provided to the assessment shows how someone is understanding a mental model needed to complete the assessment.
 
 
-![example](./formative-assessment.png)
+![example](/note-images/formative-assessment.png)

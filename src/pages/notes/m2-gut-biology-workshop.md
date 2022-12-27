@@ -1,6 +1,6 @@
 ---
 title: M2 Gut Biology Workshop
-image: assets/images/lukas-blazek-f-TWhXOrLiU-unsplash.jpg
+image: /images/lukas-blazek-f-TWhXOrLiU-unsplash.jpg
 tags: nutrition
 ---
 

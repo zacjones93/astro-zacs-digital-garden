@@ -1,6 +1,6 @@
 ---
 title: Use console dir to Log Deeply Nested Objects
-tags: [dev]
+tags: dev
 ---
 
 When you are working in JavaScript, a lot of the time you find yourself logging out values to see if you're on the right track.

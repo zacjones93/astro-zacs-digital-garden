@@ -1,6 +1,6 @@
 ---
 title: Utilize the Implicit Grid for consistent design of UI Elements
-image: ./product-card-detail-spacing.png
+image: /note-images/product-card-detail-spacing.png
 tags: design
 ---
 

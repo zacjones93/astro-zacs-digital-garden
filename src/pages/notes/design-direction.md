@@ -1,6 +1,6 @@
 ---
 title: Design Direction
-image: assets/images/01-og-image-design-direction-v2.png
+image: /images/01-og-image-design-direction-v2.png
 tags: design
 ---
 
@@ -30,7 +30,7 @@ This is supposed to be: fun, playful, friendly, happy
 
 This card felt easier to design to me. Round corners, a font that is 'crayon'-y, and a colorful background with shapes that are something you might draw with crayons.
 
-![crayon cta](./01--crayon.png)
+![crayon cta](/note-images/01-crayon.png)
 
 ### Fountain Pen
 
@@ -40,4 +40,4 @@ This one was hard for me to design. I don't think I nailed it but was spending t
 
 Spent way too much time tracing the pens tip to make the svg so I kept it in there but don't know if that really works.
 
-![fountain pen cta](./01--fountain.png)
+![fountain pen cta](/note-images/01-fountain.png)

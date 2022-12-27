@@ -1,4 +1,4 @@
 ---
 title: Zac Jones
-image: /assets/images/profile.jpg
+image: /images/profile.jpg
 ---

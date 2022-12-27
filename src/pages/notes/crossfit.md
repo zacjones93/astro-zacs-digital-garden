@@ -1,6 +1,6 @@
 ---
 title: CrossFit
-image: assets/images/clean.jpg
+image: /images/clean.jpg
 tags: [CrossFit]
 ---
 

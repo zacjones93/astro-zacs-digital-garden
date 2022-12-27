@@ -117,7 +117,7 @@ Anti-inflammatory and butyrate producing microbes increased in abundance, wherea
 blue is decreased
 red is increase
 
-![bacteria tree](../assets/images/bacteria-tree.png)
+![bacteria tree](/images/bacteria-tree.png)
 
 Individuals with a high baseline abundance of A. muciniphila before CR showed improved glucose homeostasis, blood lipids, and body composition
 
@@ -176,7 +176,7 @@ we want as many different strains of bacteria in our body
     -   Some concern over the reduction of Bifidobacterium
     -   However, an increase in butyrate producing bacteria was also observed
         
-![FODMAP effect on bacteria](../assets/images/FODMAP-effect.png)
+![FODMAP effect on bacteria](/images/FODMAP-effect.png)
 
 
 <a id="org3ea6cfd"></a>
@@ -254,7 +254,7 @@ Very young field of study
         
         Got more F&rsquo;s and less B&rsquo;s
 
-![stress response](../assets/images/stress-response.png)
+![stress response](/images/stress-response.png)
 
 -   Stress is known to induce dysbiosis, reduce barrier functon, etc.
 -   Lack of sleep is a well known stressor

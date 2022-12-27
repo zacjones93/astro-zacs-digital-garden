@@ -7,7 +7,7 @@ I used the primary [[call to action]] as the main hue and derived all the other 
 
 Use low saturation for your [[structural colors]].
 
-![an example of monochromatic vs desaturated ui](../assets/images/monochromatic-colors.png)
+![an example of monochromatic vs desaturated ui](/images/monochromatic-colors.png)
 
 
 

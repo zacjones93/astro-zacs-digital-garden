@@ -46,7 +46,7 @@ After identifying a great source of knowledge in a subject, work to create a rew
     
     **Discover the great literature in your profession or area of interest—the finest books, articles, and speeches ever written—and then begin an earnest study of these works.**
     
-    ![img](./knowledge-hydrant-01-earnest-study.jpeg "Select important articles to study within a field")
+    ![img](./knowledge-hydrant-01-earnest-study.jpeg) "Select important articles to study within a field"
 
 -   So how do you find the great literature worthy of study? Ask people. Ask knowledgeable people which authors they like, what are
     their favorite books, what profoundly influenced them?

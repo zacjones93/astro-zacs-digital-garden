@@ -1,6 +1,6 @@
 ---
 title: AMRAP sHSPU & Burpee Box Jumps
-image: ./hspu.jpg
+image: /note-images/hspu.jpg
 tags: CrossFit
 ---
 

@@ -39,7 +39,7 @@ React hooks don't change how input is handled. There is a `userInput` state vari
 
 The resulting output is rendered to the screen for feedback.
 
-![Screenshot of One User input handled](./handle-one-input.png)
+![Screenshot of One User input handled](/note-images/handle-one-input.png)
 
 ## The Problem of scaling Controlled Inputs
 
@@ -95,7 +95,7 @@ function AppStart(){
 }
 ```
 
-![Screenshot of multiple inputs](./handle-multiple-inputs.png)
+![Screenshot of multiple inputs](/note-images/handle-multiple-inputs.png)
 
 In the above example, each input has it's own state variable initialized through `useState`. Each state variable initialized,`firstName`, `lastName`, and `phoneNumber`. has it's own handle change function which works but we broke one of the biggest rules in software development, DRY.
 
@@ -189,7 +189,7 @@ return (
 )
 ```
 
-![multiple inputs work again](./multiple-inputs-works-again.png)
+![multiple inputs work again](/note-images/multiple-inputs-works-again.png)
 
 We now have all our inputs handled by a single function that will take in the `name` of the input and update the corresponding state values.
 

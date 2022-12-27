@@ -1,6 +1,6 @@
 ---
 title: Hydrate dry sourdough starter
-image: ./sourdough-starter.png
+image: /note-images/sourdough-starter.png
 ---
 
 ## Terminology

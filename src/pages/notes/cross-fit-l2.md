@@ -1,7 +1,7 @@
 ---
 title: CrossFit L2
 tags: CrossFit
-image: ./crossfit-l2.jpeg
+image: /note-images/crossfit-l2.jpeg
 ---
 
 

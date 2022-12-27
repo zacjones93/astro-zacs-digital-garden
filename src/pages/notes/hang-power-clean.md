@@ -1,6 +1,6 @@
 ---
 title: Hang Power Clean
-image: ./low-hang-clean.JPG
+image: /note-images/low-hang-clean.JPG
 tags: CrossFit
 ---
 
