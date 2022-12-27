@@ -1,10 +1,16 @@
 ---
 import Layout from '@layouts/Layout.astro';
 const title = "About Me"
+const posts = await Astro.glob('./notes/*.md');
 ---
+
   <a href="/">Home</a>
   <a href="/about">About</a>
   <a href="/blog">Blog</a>
+
+  <pre>
+    {JSON.stringify(posts.map(m => m.frontmatter), null, 2)}
+  </pre>
 <Layout title={title}>
 	<main>
 		<h1><span class="text-gradient">About Me</span></h1>
