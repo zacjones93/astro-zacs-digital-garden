@@ -18,19 +18,19 @@ The project involves a hardware store that needs an index of product cards displ
 It needed designs which is where I contribute. I started with the product card.
 
 Here's V1: 
-![first version of the product card](./product-card-old.png)
+![first version of the product card](/note-images/product-card-old.png)
 
 This looks alright. I started with the [[typography]] and designated the font sizes that I would use for the design. Consistent [[font size]] is key. 
 
 The most significant aspects of the card are the price and the action for people to buy. Everything else falls around these two elements.
 
-![typography definitions for the Vue Project](./vue-fundamentals-typography.png)
+![typography definitions for the Vue Project](/note-images/vue-fundamentals-typography.png)
 
 A big flaw in this design is the use of negative space throughout the card. Just like with Typography, negative space and spacing should consistent in your application.
 
 You might not notice that there are quite a few different spacings going on but over-all it combines into a sloppy looking card where 'something is off.'
 
-![Spacing highlighted in the product card](./product-card-spacing.png)
+![Spacing highlighted in the product card](/note-images/product-card-spacing.png)
 
 When the spacing is highlighted, you can see really well that the spacing in the card is sloppy. Nothing is consistent and this results in the card looking off.
 
@@ -38,13 +38,13 @@ This is where [[implicit grid]] helps. The changes are subtle but the consistenc
 
 This becomes more and more impactful when you multiple this design across your whole site.
 
-![implicit grid applied](./product-card-detail.png)
+![implicit grid applied](/note-images/product-card-detail.png)
 
 
 Here you can see the explicit pixel spacings applied to the card:
 
 
-![implicit grid applied to card with spacing shown](./product-card-detail-spacing.png)
+![implicit grid applied to card with spacing shown](/note-images/product-card-detail-spacing.png)
 
 You'll notice that not everything is exactly lined up using the grid. This is because you need to zoom out and look at the over all design to see if it's working and what isn't given your constraints.
 
