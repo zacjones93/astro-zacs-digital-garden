@@ -19,7 +19,7 @@ const {
 
 <BaseLayout title={title} description={description} image={image} >
     <main>
-      <article>
+      <article class="mx-4">
         {image && <Image class="object-fit rounded mx-auto mb-8" width={720} height={360} src={image} alt="cover image"/>}
         <h1 class=" my-1 text-4xl font-bold">{title}</h1>
         {pubDate && <time>{pubDate}</time>}
@@ -32,12 +32,12 @@ const {
           )
         }
         <hr class="border-t border-solid border-color-subtext my-4" />
-        <div class="grid grid-cols-8">
+        <div class="sm:grid sm:grid-cols-8">
           <div class="prose lg:prose-lg col-span-6">
             <slot />
           </div>
-          <side class="col-span-2 text-sm">
-            <h3 class="text-xl mb-4 font-medium">Notes mentioning this note</h3>
+          <side class="col-span-2 text-sm ">
+            <h3 class="text-xl mb-4 font-medium mt-4">Notes mentioning this note</h3>
             <!-- {% if page.backlinks.size > 0 %}
             <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
             {% for backlink in page.backlinks %}
