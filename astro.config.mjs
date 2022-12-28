@@ -1,10 +1,8 @@
 
 import { defineConfig } from 'astro/config';
-import mdx from '@astrojs/mdx';
 import remarkToc from 'remark-toc';
-import { rehypeAccessibleEmojis } from 'rehype-accessible-emojis';
 import {doubleBracketPlugin} from './plugins/backlinkPlugin.mjs'
-import { applyLayoutToNotesPlugin } from './plugins/noteLayoutPlugin.js';
+import { applyLayoutToNotesPlugin } from './plugins/noteLayoutPlugin.mjs';
 
 // https://astro.build/config
 import image from "@astrojs/image";
@@ -25,9 +23,5 @@ export default defineConfig({
       serviceEntryPoint: '@astrojs/image/sharp'
     }), 
     tailwind(), 
-    mdx({
-      // Applied to .mdx files only
-      rehypePlugins: [rehypeAccessibleEmojis],
-    })
   ]
 });
