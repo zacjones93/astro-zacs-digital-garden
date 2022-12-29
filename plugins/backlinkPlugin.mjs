@@ -70,9 +70,9 @@ const createGraph = (file) => {
     });
   });
     let uniqNodes = combinedNodes.filter((value, index) => {
-    const _value = JSON.stringify(value);
+    const _value = JSON.stringify(value).toLowerCase();
     return index === combinedNodes.findIndex(obj => {
-      return JSON.stringify(obj) === _value;
+      return JSON.stringify(obj).toLowerCase() === _value;
     });
   });
   
