@@ -1,7 +1,7 @@
 # build output
 dist/
 .output/
-
+tagged_notes_graph.json
 
 # dependencies
 node_modules/
