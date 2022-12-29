@@ -4,8 +4,8 @@ tags: CrossFit
 image: /note-images/crossfit-l2.jpeg
 ---
 
+[[CrossFit]] L2
 
-[[CrossFit L2]]
 
 # lecture 1
 ## 6 Attributes of Effective Training
