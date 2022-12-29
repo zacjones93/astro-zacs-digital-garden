@@ -1,0 +1,20 @@
+---
+title: CrossFit Class Planning
+tags: CrossFit
+---
+
+- [[2021-06-09-7-Fit]] - pushpress, jumpovers, burpees
+- [[2021-06-11-7-Fit]] - deads, step ups, push press
+- [[2021-06-16-7-Fit]] - wall balls and burpees
+- [[2021-06-25-7-Fit]] - db thruster metcon
+- [[2021-06-30-7-Fit]] - long E2MOM
+- [[2021-07-02-7-Fit]] - 3 amraps
+- [[2021-07-06-7-Fit]] - E6MOM bike / thrusters / burpees
+- [[2021-07-09-7-Fit]] - AMRAP push jerk, v-ups
+
+- [[2021-09-15-7-Fit]] - Long Metcon
+- [[2021-11-03-7-Fit]] - zpress and running
+
+
+
+
