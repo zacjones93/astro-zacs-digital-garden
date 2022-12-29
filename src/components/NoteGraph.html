@@ -67,7 +67,6 @@
 
         if(graphData) {
           oScript.onload = () => {
-            console.log({graphData})
             const MINIMAL_NODE_SIZE = 8;
             const MAX_NODE_SIZE = 12;
             const ACTIVE_RADIUS_FACTOR = 1.5;
@@ -205,7 +204,7 @@
             const svg = d3.select("svg");
             const width = Number(svg.attr("width"));
             const height = Number(svg.attr("height"));
-            let zoomLevel = 1;
+            let zoomLevel = 0.30;
 
             const simulation = d3
               .forceSimulation(nodesData)
