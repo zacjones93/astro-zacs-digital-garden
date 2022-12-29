@@ -16,6 +16,8 @@ import { Image } from '@astrojs/image/components';
 import graph from '../../public/tagged_notes_graph.json'
 import { getHash } from '@lib/hashNoteTitles'
 import InternalLink from '@components/InternalLink.astro';
+import NoteGraph from '@components/NoteGraph.html';
+import {sentenceCase} from 'text-case'
 
 let hashedTitle = getHash(title)
 let noteEdges = graph.edges.filter((edge) => {
@@ -25,11 +27,8 @@ let linkedNotes = noteEdges.map((edge) => {
   let nodes = graph.nodes.filter((node) => {
       return node.id === edge.source
     })
-    console.log({nodes})
   return nodes[0]
 }).filter(x => !!x)
-
-console.log({noteEdges, linkedNotes})
 
 
 ---
@@ -60,7 +59,7 @@ console.log({noteEdges, linkedNotes})
                 <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
                 {linkedNotes.map(note => {
                   return (<div class="bg-card-background text-sm p-4">
-                    <b><InternalLink href={note.path} title={note.label} /></b><br>
+                    <b><InternalLink href={note.path} title={sentenceCase(note.label)} /></b><br>
                   </div>)
                 })}
               </div>)
@@ -76,7 +75,7 @@ console.log({noteEdges, linkedNotes})
             }
           </side>
       </div>
-        
       </article>
     </main>
 </BaseLayout>
+<NoteGraph />

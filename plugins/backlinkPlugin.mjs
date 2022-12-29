@@ -1,6 +1,6 @@
 import { visit } from 'unist-util-visit'
 import { toString } from 'mdast-util-to-string'
-import slugify from 'slugify'
+import { paramCase } from 'text-case'
 import { getHash } from '../lib/hashNoteTitles'
 import fs from 'fs';
 
@@ -17,7 +17,7 @@ const isDoubleBracket = (text) => {
 
 const defaultTitleToURLPath = (notesPath = "/notes/", title) => {
     let segments = title.split("|");
-    const slugifiedTitle = slugify(segments[0].toLowerCase());
+    const slugifiedTitle = paramCase(segments[0].toLowerCase());
     return `${notesPath}${slugifiedTitle}`;
 };
 
