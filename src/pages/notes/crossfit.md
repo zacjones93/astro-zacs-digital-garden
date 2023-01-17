@@ -1,7 +1,7 @@
 ---
 title: CrossFit
-image: /images/clean.jpg
 tags: [CrossFit]
+noteIcon: /images/health-plant.png
 ---
 
 CrossFit is constantly varied, function movement executed at high intensity with the end goal of increasing someones fitness and by doing so allowing individuals to maintain health throughout their life.

@@ -1,6 +1,7 @@
 ---
 title: Dev
 tags: dev
+noteIcon: /images/dev-plant.png
 ---
 
 ## Notes

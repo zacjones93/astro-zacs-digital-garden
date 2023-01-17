@@ -1,6 +1,7 @@
 ---
 title: Business
 tags: business
+noteIcon: /images/business-plant.png
 ---
 
 - [[Badass Making Users Awesome]]

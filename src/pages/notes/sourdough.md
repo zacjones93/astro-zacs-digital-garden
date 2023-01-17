@@ -1,7 +1,7 @@
 ---
 title: Sourdough
-image: /note-images/pixel-sourdough.png
 tags: baking
+noteIcon: /note-images/pixel-loaf.png
 ---
 
 
