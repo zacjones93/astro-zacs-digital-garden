@@ -1,19 +1,20 @@
 ---
 export interface Props {
 	title: string;
+  styleOverride?: string;
 	href?: string;
 }
 
 import defaultTitleToURLPath from '@lib/defaultTitleToURLPath'
 
-const { href, title } = Astro.props;
+const { href, title, styleOverride } = Astro.props;
 
 let myHref = href ? href : defaultTitleToURLPath(title)
 
 ---
 
 <a 
-  class="no-underline border-b-2 border-solid border-b-primary p-[2px] rounded hover:bg-primary" 
+  class={`no-underline border-b-2 border-solid border-b-primary p-[2px] rounded hover:bg-primary font-body ${styleOverride}`} 
   href={myHref}
 >
     {title}

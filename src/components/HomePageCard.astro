@@ -14,9 +14,9 @@ const { note, description, image } = Astro.props;
   <div>
   <img class="w-12 block mx-auto" aria-hidden="true" src={image}>
   <h2 class="w-fit mx-auto font-bold text-4xl my-6 text-color-text">
-    <InternalLink title={note} />
+    <InternalLink title={note} styleOverride='font-title' />
   </h2>
-  <p class="h-28 text-xl sm:text-lg leading-7 mt-4 text-center text-color-text">
+  <p class="h-28 text-xl sm:text-lg leading-7 mt-4 text-center text-color-text font-body">
     {description}
   </p>
   </div>

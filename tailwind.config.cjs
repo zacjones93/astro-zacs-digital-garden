@@ -10,6 +10,11 @@ module.exports = {
       'color-subtext': '#777d78',
       'color-background': '#edf2ee'
     },
+    fontFamily: {
+      'title': ['"Exo 2"', 'serif'],
+      'subtitle': ['"Medula One"', 'serif'],
+      'body': ['Metrophobic', 'sans-serif']
+    },
 		extend: {},
 	},
 	plugins: [require("@tailwindcss/typography")],
