@@ -3,7 +3,7 @@ layout: ../../layouts/NoteLayout.astro
 title: Design
 description: "A collection of my design notes"
 tags: ["design"]
-noteIcon: /images/design-plant.png
+noteIcon: /images/design-plant-v2.png
 ---
 
 

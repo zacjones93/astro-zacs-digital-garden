@@ -2,6 +2,7 @@
 dist/
 .output/
 public/tagged_notes_graph.json
+.env.local
 
 # dependencies
 node_modules/
