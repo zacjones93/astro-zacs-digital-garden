@@ -12,16 +12,17 @@ export interface Props {
 }
 
 const { title, description, image } = Astro.props;
+
 ---
 
 <!DOCTYPE html>
-<html lang="en" class="dark bg-background">
+<html lang="en" class="dark bg-background" style="visibility: hidden;">
   <div class="dark:bg-background-dark bg-background h-full">
     <div class="max-w-5xl sm:mx-4 py-10 lg:mx-auto">
       <head >
         <BaseHead title={title} description={description} image={image} />
       </head>
-      <body>
+      <body >
         <Nav />
         <slot />
       </body>
@@ -73,4 +74,17 @@ href="https://fonts.googleapis.com/css?family=Exo+2:bold|Medula+One|Metrophobic"
     document.documentElement.classList.add("dark");
   }
   window.localStorage.setItem("theme", theme);
+
+  let domReady = (cb) => {
+  document.readyState === 'interactive' || document.readyState === 'complete'
+    ? cb()
+    : document.addEventListener('DOMContentLoaded', cb);
+};
+
+domReady(() => {
+  console.log(document)
+  document.body.style.visibility = 'visible';
+});
+
+  
 </script>
