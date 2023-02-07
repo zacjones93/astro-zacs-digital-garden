@@ -1,50 +1,33 @@
+---
+import ThemeToggle from '@components/ThemeToggle';
+import SiteStamp from './SiteStamp.astro';
+---
 <div class="my-8 ">
-  <div class="gradient-box mx-auto sm:mx-0 hidden sm:block">
-      <a class="internal-link logo p-2 text-2xl font-title" style="white-space: nowrap;" href="/"><b>Zac's digital garden</b></a>
+  <div class="flex flex-row justify-between">
+    <div class="
+      mx-auto sm:mx-0 hidden py-[6px] px-[4px] sm:block bg-gradient-to-br from-[#3ae05e] to-primary rounded
+      dark:p-0 dark:my-[6px] dark:mx-[5px]
+      dark:border-b-4 dark:border-primary-dark 
+      dark:from-primary-dark dark:to-primary-dark
+      hover:dark:text-primary-dark
+      dark:transition dark:ease-in-out 
+      ">
+        <a id="site-logo" class="
+        
+        text-2xl p-1 font-title 
+        bg-background rounded 
+        hover:bg-opacity-0 
+        transition ease-in-out 
+        motion-reduce:transition-none motion-reduce:hover:transform-none
+        dark:text-color-text-dark
+        dark:bg-background-dark
+        " style="white-space: nowrap;" href="/"><b>Zac's digital garden</b></a>
+    </div>
+    <ThemeToggle classNames="sm:block hidden" client:load />
   </div>
-  <a href="/">
-    <img
-      class="block sm:hidden mx-auto"
-      src="/images/site-stamp.svg"
-      width={100} 
-      height={100}
-      alt="a pixeleted plant"
-    />
+  <a id="site-logo-mobile" href="/">
+    <SiteStamp classNames="hidden dark:block sm:hidden mx-auto" textColor="#e9efea" />
+    <SiteStamp classNames="block sm:hidden dark:hidden mx-auto" textColor="#0d2410" />
   </a>
 </div>
 
-<style>
-.gradient-box {
-position: relative;
-box-sizing: border-box;
-background-color: #edf2ee;
-width: fit-content;
-background-clip: padding-box; /* !importanté */
-border: solid 2px transparent; /* !importanté */
-border-radius: 4px;
-}
-.gradient-box:before {
-content: '';
-position: absolute;
-top: 0; right: 0; bottom: 0; left: 0;
-z-index: -1;
-margin: -2px; /* !importanté */
-border-radius: inherit; /* !importanté */
-background: linear-gradient(to bottom right, #3ae05e, #27d6b8);
-}
-.gradient-box:hover {
-  color: #0c2e13 !important;
-  background: #27d6b8;
-  transition: 200ms linear; 
-}
-
-
-.logo {
-  border: none;
-  margin: .25em;
-  background-color: none;
-  color: #0c2e13 !important;
-  padding: 0;
-}
-
-</style>

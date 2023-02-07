@@ -39,14 +39,14 @@ let books = ["Badass Making Users Awesome", "The Mom Test",]
 <Layout title="Zac's digital garden">
   <div class="sm:flex sm:flex-row sm:justify-between sm:mt-4 sm:mb-12 sm:overflow-hidden sm:relative mx-auto md:p-4">
     <div class="w-[23em] mx-auto sm:mx-0">
-      <h1 class="w-fit font-bold mx-auto sm:mx-0 mt-4 mb-6 sm:font-bold text-4xl text-color-text font-title"> Welcome!</h1>
-        <p class="text-xl sm:text-lg leading-7 mt-4 text-color-text font-body">
+      <h1 class="w-fit font-bold mx-auto sm:mx-0 mt-4 mb-6 sm:font-bold text-4xl text-color-text dark:text-color-text-dark font-title"> Welcome <span class="hover:animate-waving-hand cursor-grab">👋🏻</span></h1>
+        <p class="text-xl sm:text-lg leading-7 mt-4 text-color-text dark:text-color-text-dark font-body">
           This site is a collection of my thoughts that are organized into notes. They all very in length and polish.
         </p>
-        <p class="text-xl sm:text-lg leading-7 mt-4 text-color-text font-body">
+        <p class="text-xl sm:text-lg leading-7 mt-4 text-color-text dark:text-color-text-dark font-body">
           Some will be quick notes for a specific task at hand that I found useful to have on the internet and others will dig deeper into the big ideas surrounding a topic.
         </p>
-        <p class="text-xl sm:text-lg leading-7 mt-4 text-color-text font-body">Currently there are four main categories that I am exploring:</p>
+        <p class="text-xl sm:text-lg leading-7 mt-4 text-color-text dark:text-color-text-dark font-body">Currently there are four main categories that I am exploring:</p>
     </div>
     <Image
       class="hidden sm:block h-fit self-center"
@@ -79,21 +79,21 @@ let books = ["Badass Making Users Awesome", "The Mom Test",]
 
   <div class="flex flex-col sm:flex-row">
     <div class="w-fit justify-self-center">
-      <h2 class="mx-auto w-fit sm:mx-0 font-semibold text-2xl text-color-text font-subtitle">Articles & Prominent Notes</h2>
-      <ul class=" m-4 text-xl sm:text-lg leading-7 text-color-text">
+      <h2 class="mx-auto w-fit sm:mx-0 font-semibold text-3xl text-color-text dark:text-color-text-dark font-subtitle">Articles & Prominent Notes</h2>
+      <ul class=" m-4 text-xl sm:text-lg leading-7 text-color-text dark:text-color-text-dark">
         {articles.map(article => (
           <li class="my-2">- <InternalLink title={article}/></li>
         ))}
       </ul>
     </div>
     <div class="w-fit justify-self-center">
-      <h2 class="mx-auto w-fit sm:mx-0 font-semibold text-2xl text-color-text font-subtitle">Projects</h2>
-      <ul class=" m-4 text-xl sm:text-lg leading-7 text-color-text font-body">
+      <h2 class="mx-auto w-fit sm:mx-0 font-semibold text-3xl text-color-text dark:text-color-text-dark font-subtitle">Projects</h2>
+      <ul class=" m-4 text-xl sm:text-lg leading-7 text-color-text dark:text-color-text-dark font-body">
         <li class="my-2">- egghead.io -- <ExternalLink href="https://github.com/eggheadio/egghead-next/pull/602" title="PR showcase pulling Sanity data into a Next.js site" /> </li>
         <li class="my-2">- egghead-kenv -- <ExternalLink href="https://github.com/zacjones93/egghead-kenv" title="collection of internal team scripts and tools"></ExternalLink></li>
       </ul>
-      <h2 class="mx-auto w-fit sm:mx-0 font-semibold text-2xl text-left text-color-text font-subtitle">Book Reviews & Notes</h2>
-      <ul class=" m-4 text-xl sm:text-lg leading-7 text-color-text">
+      <h2 class="mx-auto w-fit sm:mx-0 font-semibold text-3xl text-left text-color-text dark:text-color-text-dark font-subtitle">Book Reviews & Notes</h2>
+      <ul class=" m-4 text-xl sm:text-lg leading-7 text-color-text dark:text-color-text-dark">
         {books.map(book => (
           <li class="my-2">- <InternalLink title={book}/></li>
         ))}

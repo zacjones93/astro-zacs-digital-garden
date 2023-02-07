@@ -2,6 +2,8 @@
 import Subscribe from '@components/Subscribe.astro';
 import BaseHead from '@components/BaseHead.astro';
 import Nav from '@components/Nav.astro';
+import ThemeToggle from '@components/ThemeToggle';
+
 
 export interface Props {
 	title: string;
@@ -13,15 +15,23 @@ const { title, description, image } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en" class="max-w-5xl bg-background sm:mx-4 lg:mx-auto">
-	<head>
-    <BaseHead title={title} description={description} image={image} />
-	</head>
-	<body>
-    <Nav />
-		<slot />
-	</body>
-  <Subscribe />
+<html lang="en" class="dark bg-background">
+  <div class="dark:bg-background-dark bg-background h-full">
+    <div class="max-w-5xl sm:mx-4 py-10 lg:mx-auto">
+      <head >
+        <BaseHead title={title} description={description} image={image} />
+      </head>
+      <body>
+        <Nav />
+        <slot />
+      </body>
+      
+      <Subscribe /> 
+      <ThemeToggle classNames="sm:hidden block mx-auto" client:load />
+    </div>
+    
+  </div>
+	
 </html>
 <style is:global>
 	:root {
@@ -46,3 +56,21 @@ const { title, description, image } = Astro.props;
 <link rel="stylesheet"
 href="https://fonts.googleapis.com/css?family=Exo+2:bold|Medula+One|Metrophobic">
 
+<script is:inline>
+  const theme = (() => {
+    if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
+      return localStorage.getItem("theme");
+    }
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      return "dark";
+    }
+    return "light";
+  })();
+
+  if (theme === "light") {
+    document.documentElement.classList.remove("dark");
+  } else {
+    document.documentElement.classList.add("dark");
+  }
+  window.localStorage.setItem("theme", theme);
+</script>

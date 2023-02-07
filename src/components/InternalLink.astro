@@ -14,7 +14,7 @@ let myHref = href ? href : defaultTitleToURLPath(title)
 ---
 
 <a 
-  class={`no-underline border-b-2 border-solid border-b-primary p-[2px] rounded hover:bg-primary font-body ${styleOverride}`} 
+  class={`no-underline border-b-2 border-solid border-b-primary dark:border-b-primary-dark p-[2px] rounded hover:bg-primary dark:hover:bg-primary-dark transition-all ease-in-out delay-150 font-body ${styleOverride}`} 
   href={myHref}
 >
     {title}

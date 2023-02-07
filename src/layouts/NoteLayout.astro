@@ -2,7 +2,7 @@
 export interface Props {
 	content: {
 		title: string;
-		description: string;
+		description?: string;
 		pubDate?: string;
 		updatedDate?: string;
 		image?: string;
@@ -34,7 +34,7 @@ let linkedNotes = noteEdges.map((edge) => {
 ---
 
 <BaseLayout title={title} description={description} image={image} >
-    <main>
+    <main class="blog-content mb-10">
       <article class="mx-4">
         {image && <Image class="object-fit rounded mx-auto mb-8" width={720} height={360} src={image} alt="cover image"/>}
         <div class="flex place-items-start">
@@ -46,10 +46,10 @@ let linkedNotes = noteEdges.map((edge) => {
             format="png" 
             alt="a pixeleted plant"
           /> }
-          <h1 class=" my-1 text-4xl font-bold font-title">{title}</h1>
+          <h1 class=" my-1 text-4xl font-bold font-title dark:text-color-text-dark">{title}</h1>
         </div>
         {pubDate && <time>{pubDate}</time>}
-        {description && <p class="prose font-body">{description}</p>}
+        {description && <p class="font-body dark:text-color-text-dark">{description}</p>}
         {
           updatedDate && (
             <div>
@@ -59,16 +59,16 @@ let linkedNotes = noteEdges.map((edge) => {
         }
         <hr class="border-t border-solid border-color-subtext my-4" />
         <div class="sm:grid sm:grid-cols-8">
-          <div class="prose lg:prose-lg col-span-6 font-body">
+          <div class="col-span-6 font-body dark:text-color-text-dark">
             <slot />
           </div>
           <side class="col-span-2 text-sm ml-4">
-            <h3 class="text-xl mb-4 font-medium mt-4 font-subtitle">Notes mentioning this note</h3>
+            <h3 class="text-xl mb-4 font-medium mt-4 font-subtitle dark:text-color-text-dark">Notes mentioning this note</h3>
             {
               (linkedNotes.length > 0) && (
                 <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
                 {linkedNotes.map(note => {
-                  return (<div class="bg-card-background text-sm p-4 font-body">
+                  return (<div class="bg-card-background dark:bg-card-background-dark text-md p-4 font-body rounded-xl dark:text-color-text-dark">
                     <b><InternalLink href={note.path} title={sentenceCase(note.label)} /></b><br>
                   </div>)
                 })}
@@ -76,8 +76,8 @@ let linkedNotes = noteEdges.map((edge) => {
             }
             {
               (linkedNotes.length === 0) && (
-                <div class="bg-card-background text-sm p-4">
-                  <p class="prose font-body">
+                <div class="bg-card-background dark:bg-card-background-dark text-sm p-4 rounded-xl">
+                  <p class="font-body dark:text-color-text-dark">
                     There are no notes linking to this note.
                   </p>
                 </div>
@@ -87,5 +87,42 @@ let linkedNotes = noteEdges.map((edge) => {
       </div>
       </article>
     </main>
+    <div class="sm:block hidden"> 
+      <NoteGraph client:only />
+    </div>
 </BaseLayout>
-<NoteGraph />
+
+
+
+<style is:global>
+  main { 
+    @apply space-y-4
+  }
+  h2 {
+    @apply mx-auto w-fit sm:mx-0 font-semibold text-3xl text-color-text dark:text-color-text-dark font-subtitle my-8
+  }
+  h3 {
+    @apply mx-auto w-fit sm:mx-0 font-semibold text-2xl text-color-text dark:text-color-text-dark font-subtitle my-8 ml-4
+  }
+  h4 {
+    @apply mx-auto w-fit sm:mx-0 text-xl font-bold text-color-text dark:text-color-text-dark font-subtitle my-8
+  }
+  p {
+    @apply text-xl sm:text-lg leading-7 text-color-text dark:text-color-text-dark font-body
+  }
+  li {
+    @apply my-2 list-disc ml-6 font-body text-xl sm:text-lg
+  }
+
+  a {
+    @apply text-xl sm:text-lg leading-7 text-color-text dark:text-color-text-dark font-body underline cursor-pointer
+  }
+
+  #site-logo {
+    @apply no-underline
+  }
+
+  #site-logo-mobile {
+    @apply no-underline
+  }
+</style>

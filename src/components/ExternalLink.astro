@@ -11,7 +11,7 @@ const { href, title } = Astro.props;
 ---
 
 <a 
-  class="no-underline border-b-2 border-solid border-b-primary p-[2px] rounded hover:bg-primary external-link font-body" 
+  class="no-underline border-b-2 border-solid border-b-primary p-[2px] rounded hover:bg-primary external-link font-body dark:border-b-primary-dark dark:hover:bg-primary-dark transition-all ease-in-out delay-150 dark:hover:text-color-text-dark dark:text-color-text-dark" 
   href={href}
 >
     {title}

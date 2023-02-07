@@ -28,7 +28,7 @@ const formatBracketLinks = (text, fileName, titleToUrl) => {
 
         buildGraph(title, fileName)
 
-        return `<a class="no-underline border-b-2 border-solid border-b-primary p-[2px] rounded hover:bg-primary" href="${titleToUrl(linkTitle)}">${title}</a>`
+        return `<a class="no-underline border-b-2 border-solid border-b-primary dark:border-b-primary-dark p-[2px] rounded hover:bg-primary dark:hover:bg-primary-dark dark:text-color-text-dark" href="${titleToUrl(linkTitle)}">${title}</a>`
     });
 };
 
