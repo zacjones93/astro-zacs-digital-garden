@@ -1,6 +1,6 @@
 ---
 title: Strategy of Preeminence
-tags: [business]
+tags: "business"
 ---
 
 [[Strategy of Preeminence raw notes]]

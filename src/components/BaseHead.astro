@@ -9,11 +9,10 @@ export interface Props {
 }
 
 const { title, description, image = '/images/og-image-v4.png' } = Astro.props;
-console.log(Astro.url.pathname)
 ---
 
 <!-- Global Metadata -->
-<meta charset="utf-8" />
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <link rel="icon" type="image/png" href="/images/favicon-96x96.png" />
 <meta name="generator" content={Astro.generator} />

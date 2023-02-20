@@ -17,11 +17,12 @@ const { title, description, image } = Astro.props;
 
 <!DOCTYPE html>
 <html lang="en" class="dark bg-background" style="visibility: hidden;">
+  <head >
+    <BaseHead title={title} description={description} image={image} />
+  </head>
   <div class="dark:bg-background-dark bg-background h-full">
     <div class="max-w-5xl sm:mx-4 py-10 lg:mx-auto">
-      <head >
-        <BaseHead title={title} description={description} image={image} />
-      </head>
+      
       <body >
         <Nav />
         <slot />
@@ -82,7 +83,6 @@ href="https://fonts.googleapis.com/css?family=Exo+2:bold|Medula+One|Metrophobic"
 };
 
 domReady(() => {
-  console.log(document)
   document.body.style.visibility = 'visible';
 });
 

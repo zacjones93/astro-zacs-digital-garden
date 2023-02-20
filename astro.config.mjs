@@ -2,7 +2,6 @@
 import { defineConfig } from 'astro/config';
 import remarkToc from 'remark-toc';
 import {doubleBracketPlugin} from './plugins/backlinkPlugin.mjs'
-import { applyLayoutToNotesPlugin } from './plugins/noteLayoutPlugin.mjs';
 
 // https://astro.build/config
 import image from "@astrojs/image";
@@ -13,12 +12,10 @@ import react from '@astrojs/react'
 
 // https://astro.build/config
 export default defineConfig({
-  markdown: {
-    remarkPlugins: [remarkToc, doubleBracketPlugin, applyLayoutToNotesPlugin],
-    // Preserves remark-gfm and remark-smartypants
-    extendDefaultPlugins: true,
-  },
   url: 'https://zacjones.dev',
+  markdown: {
+    remarkPlugins: [remarkToc, doubleBracketPlugin],
+  },
   integrations: [
     react(),
     image({

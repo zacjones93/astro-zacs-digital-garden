@@ -3,6 +3,7 @@ dist/
 .output/
 public/tagged_notes_graph.json
 .env.local
+.astro/
 
 # dependencies
 node_modules/

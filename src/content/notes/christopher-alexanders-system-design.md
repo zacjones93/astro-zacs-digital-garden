@@ -1,6 +1,6 @@
 ---
 title: Christopher Alexanders System Design
-tags: ["design"]
+tags: "design"
 ---
 # Table of Contents
 

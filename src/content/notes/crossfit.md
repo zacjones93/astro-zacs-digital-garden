@@ -1,6 +1,6 @@
 ---
 title: CrossFit
-tags: [CrossFit]
+tags: CrossFit
 noteIcon: /images/health-plant.png
 ---
 

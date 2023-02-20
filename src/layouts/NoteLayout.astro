@@ -10,8 +10,9 @@ export interface Props {
 	};
 }
 const {
-	content: { title, description, pubDate, updatedDate, image, noteIcon },
+	 content: {title, description, pubDate, updatedDate, image, noteIcon}
 } = Astro.props;
+
 import BaseLayout from '@layouts/BaseLayout.astro';
 import { Image } from '@astrojs/image/components';
 import graph from '../../public/tagged_notes_graph.json'
@@ -31,6 +32,7 @@ let linkedNotes = noteEdges.map((edge) => {
   return nodes[0]
 }).filter(x => !!x)
 
+
 ---
 
 <BaseLayout title={title} description={description} image={image} >
@@ -46,7 +48,7 @@ let linkedNotes = noteEdges.map((edge) => {
             format="png" 
             alt="a pixeleted plant"
           /> }
-          <h1 class=" my-1 text-4xl font-bold font-title dark:text-color-text-dark">{title}</h1>
+          <h1 class="my-1 text-4xl font-bold font-title dark:text-color-text-dark transition ease-in-out">{title}</h1>
         </div>
         {pubDate && <time>{pubDate}</time>}
         {description && <p class="font-body dark:text-color-text-dark">{description}</p>}
@@ -87,9 +89,6 @@ let linkedNotes = noteEdges.map((edge) => {
       </div>
       </article>
     </main>
-    <div class="sm:block hidden"> 
-      <NoteGraph client:only />
-    </div>
 </BaseLayout>
 
 
