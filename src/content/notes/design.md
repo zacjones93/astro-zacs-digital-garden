@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/NoteLayout.astro
 title: Design
 description: "A collection of my design notes"
 tags: "design"
