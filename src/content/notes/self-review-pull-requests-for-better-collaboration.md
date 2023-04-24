@@ -1,5 +1,5 @@
 ---
-title: Self Review for Better Collaboration
+title: Self Review Pull Requests for Better Collaboration
 tags: dev
 ---
 
