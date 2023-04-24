@@ -41,6 +41,44 @@ const { title, description, image } = Astro.props;
 		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #3AE05E 30%, white 60%);
 	}
 
+  @font-face {
+  font-family: 'WraithMono';
+  src: url('/fonts/WraithMono.otf') format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Alizarin';
+  src: url('/fonts/Alizarin.otf') format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DDSans';
+  src: url('/fonts/DDSans-Bold.otf') format("opentype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'DDSans';
+  src: url('/fonts/DDSans-Light.otf') format("opentype");
+  font-weight: lighter;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'DDSans';
+  src: url('/fonts/DDSans-Regular.otf') format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 	html {
 		font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
   sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
@@ -55,8 +93,6 @@ const { title, description, image } = Astro.props;
   
 
 </style>
-<link rel="stylesheet"
-href="https://fonts.googleapis.com/css?family=Exo+2:bold|Medula+One|Metrophobic">
 
 <script is:inline>
   const theme = (() => {

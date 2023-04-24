@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	darkMode: "class",
@@ -16,9 +18,9 @@ module.exports = {
       'color-text-dark': '#EDF2EE',
     },
     fontFamily: {
-      'title': ['"Exo 2"', 'serif'],
-      'subtitle': ['"Medula One"', 'serif'],
-      'body': ['Metrophobic', 'sans-serif']
+      'title': ['WraithMono', 'serif', ...defaultTheme.fontFamily.sans],
+      'subtitle': ['Alizarin', 'serif'],
+      'body': ['DDSans', 'sans-serif', ...defaultTheme.fontFamily.sans]
     },
 		extend: {
       keyframes: {

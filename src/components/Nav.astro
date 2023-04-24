@@ -1,16 +1,20 @@
 ---
 import ThemeToggle from '@components/ThemeToggle';
 import SiteStamp from './SiteStamp.astro';
+
+
+// nav gradient
+// from-[#3ae05e] to-primary rounded
+// dark:p-0 dark:my-[6px] dark:mx-[5px]
+//       dark:border-b-4 dark:border-primary-dark 
+//       dark:from-primary-dark dark:to-primary-dark
+//       
 ---
 <div class="my-8 ">
   <div class="flex flex-row justify-between">
     <div class="
-      mx-auto sm:mx-0 hidden py-[6px] px-[4px] sm:block bg-gradient-to-br from-[#3ae05e] to-primary rounded
-      dark:p-0 dark:my-[6px] dark:mx-[5px]
-      dark:border-b-4 dark:border-primary-dark 
-      dark:from-primary-dark dark:to-primary-dark
-      hover:dark:text-primary-dark
-      dark:transition dark:ease-in-out 
+      mx-auto sm:mx-0 hidden py-[6px] px-[4px] sm:block bg-gradient-to-br 
+      dark:transition dark:ease-in-out hover:text-primary  hover:dark:text-primary-dark
       ">
         <a id="site-logo" class="
         

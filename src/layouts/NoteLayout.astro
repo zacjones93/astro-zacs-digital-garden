@@ -43,6 +43,7 @@ let linkedNotes = noteEdges.map((edge) => {
           {noteIcon && <Image
             class="block mr-2"
             src={noteIcon}
+            height={40}
             width={30} 
             aspectRatio="979:1281" 
             format="png" 
@@ -61,7 +62,7 @@ let linkedNotes = noteEdges.map((edge) => {
         }
         <hr class="border-t border-solid border-color-subtext my-4" />
         <div class="sm:grid sm:grid-cols-8">
-          <div class="col-span-6 font-body dark:text-color-text-dark prose lg:prose-xl">
+          <div class="col-span-6 font-body dark:text-color-text-dark prose lg:prose-lg">
             <slot />
           </div>
           <side class="col-span-2 text-sm ml-4">
