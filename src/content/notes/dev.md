@@ -4,17 +4,20 @@ tags: dev
 noteIcon: /images/dev-plant.png
 ---
 
+## Articles
+
+- [[Self Review for Better Collaboration]]
+- [[Handle Multiple Inputs in React with ES6 Computed Property Name]]
+
+
 ## Notes
 
 - [[Use console dir to Log Deeply Nested Objects]]
 - [[storefront ui project brief]]
 - [[Use tabindex for accessible components]]
-
-## Articles
-
-- [[Self Review for Better Collaboration]]
-- [[Handle Multiple Inputs in React with ES6 Computed Property Name]]
 - [[What is Doom Emacs]]
+
+
 
 ## egghead
 

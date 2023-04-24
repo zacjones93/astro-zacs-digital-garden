@@ -44,10 +44,11 @@ _[full PR here](https://github.com/skillrecordings/egghead-next/pull/602)_
 Each comment you leave is an entry point for conversation and an opportunity for your team to understand what you did and provide better feedback.
 
 Some points in code that are worth highlighting:
-	●	Packages you brought in to accomplish a task
-	●	Patterns you applied
-	●	Decisions you made that aren’t obvious
-	●	Further improvements that were deemed out of scope
+
+-	Packages you brought in to accomplish a task
+-	Patterns you applied
+-	Decisions you made that aren’t obvious
+-	Further improvements that were deemed out of scope
 
 The goal here is to bring your future self and teammates the context you are holding in your head AND stimulate conversation around the changes that are made so collectively you all can make the best decisions possible. 
 
