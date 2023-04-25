@@ -11,7 +11,7 @@ import SiteStamp from './SiteStamp.astro';
 //       
 ---
 <div class="my-8 ">
-  <div class="flex flex-row justify-between">
+  <div class="flex flex-row  justify-between">
     <div class="
       mx-auto sm:mx-0 hidden py-[6px] px-[4px] sm:block bg-gradient-to-br 
       dark:transition dark:ease-in-out hover:text-primary  hover:dark:text-primary-dark
@@ -27,8 +27,8 @@ import SiteStamp from './SiteStamp.astro';
         dark:bg-background-dark
         " style="white-space: nowrap;" href="/"><b>Zac's digital garden</b></a>
     </div>
-    <div class="flex gap-4">
-      <a class="h-fit font-title text-xl dark:transition dark:ease-in-out hover:text-primary  hover:dark:text-primary-dark dark:text-color-text-dark" href="/about">About</a>
+    <div class="flex gap-4 self-center">
+      <a class="h-fit font-title text-xl dark:transition dark:ease-in-out hover:text-primary  hover:dark:text-primary-dark dark:text-color-text-dark hidden sm:block" href="/about">About</a>
       <ThemeToggle classNames="sm:block hidden text-sm h-fit" client:load />
     </div>
   </div>
