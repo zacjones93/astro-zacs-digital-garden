@@ -3,14 +3,16 @@ export interface Props {
 	note: string;
 	description: string;
   image: string;
+  className?: string;
 }
 
 import InternalLink from '@components/InternalLink.astro'
+import { twMerge } from 'tailwind-merge'
 
-const { note, description, image } = Astro.props;
+const { note, description, image, className ="" } = Astro.props;
 ---
 
-<div class=" w-72 h-80 p-4 m-2 bg-card-background dark:bg-card-background-dark border-2 border-primary dark:border-primary-dark rounded">
+<div class={twMerge("w-72 h-80 p-4 m-2 bg-card-background dark:bg-card-background-dark border-2 border-primary dark:border-primary-dark rounded", className)}>
   <div>
   <img class="w-12 block mx-auto" aria-hidden="true" src={image}>
   <h2 class="w-fit mx-auto font-bold text-4xl my-6 text-color-text dark:text-color-text-dark">

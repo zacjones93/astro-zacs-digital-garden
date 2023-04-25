@@ -1,0 +1,83 @@
+---
+import Layout from "@layouts/Layout.astro";
+import { Image } from "@astrojs/image/components";
+import HomePageCard from '@components/HomePageCard.astro';
+
+let featuredNotes = [{
+  note: "Design",
+  image: "/images/design-plant-v2.png",
+  description: "Crafting intent through whatever medium you find yourself in whether it's UI, learning design, or other."
+}, {
+  note: "Business", 
+  image: "/images/business-plant.png", 
+  description: "The art of making money, mostly online, and everything that entails."
+}, {
+  
+  note: "Dev", 
+  image: "/images/dev-plant.png", 
+  description: "Building websites and programs with various languages and techniques."
+}, {
+  note: "CrossFit", 
+  image: "/images/health-plant.png", 
+  description: "The way I achieve health and increase my healthspan."
+}]
+
+
+---
+
+<Layout title="about">
+	<div class="mt-14 m-auto w-fit">
+		<div
+			class="lg:h-[430px] dark:text-color-text-dark bg-card-background rounded p-8  overflow-hidden border-2 border-primary mb-20"
+		>
+			<div class="grid grid-rows-6 grid-cols-none sm:grid-rows-none sm:grid-cols-6">
+				<div class="relative row-span-2 sm:row-auto overflow-hidden sm:overflow-visible sm:col-span-2 -mt-16 -mx-20 sm:-mt-auto sm:-mx-auto">
+          <img
+						class="absolute object-cover w-full sm:hidden "
+						alt="zac standing in front of a waterfall"
+						src="/images/about-photo-sq.png"
+					/>
+					<img
+						class="absolute object-cover h-[600px] lg:h-auto sm:-mt-8 lg:-mt-28 xl:-mt-32 sm:-ml-24 hidden sm:block"
+						alt="zac standing in front of a waterfall"
+						src="/images/about-photo.JPG"
+					/>
+				</div>
+				<div class="row-span-4 sm:row-auto sm:col-span-4">
+					<h1 class="text-4xl font-title mt-10 mb-5">Hey, I'm Zac. 👋🏻</h1>
+          <div class="space-y-4 font-body">
+            <p>
+              This is my digital garden where I add and refine notes as I continue learn. You'll notice that some notes are sparse where others are full blown articles. This is on purpose! As I continue to learn about a topic, I iterate and build on top of my notes.
+            </p>
+  
+            <p>
+              One of my favorite features about my garden is that my notes are organized in a graph structure. When a note is linked by other notes you'll be able to click into that other note to see how it is being referenced.
+            </p>
+            <p>
+              The main categories I organize around are: <span class="font-bold">Design</span>, <span class="font-bold">Development</span>, <span class="font-bold">Business</span>, and <span class="font-bold">Health</span>. You can click through below and start exploring my notes.
+            </p>
+          </div>
+				</div>
+			</div>
+		</div>
+
+    <div style="
+    margin:1em -100%; /* old browsers fallback */
+    margin:1em calc(50% - 50vw);
+    margin-bottom: 3em;
+  " >
+    <div class="flex justify-center flex-wrap">
+      {
+        featuredNotes.map((note) => {
+          return <HomePageCard 
+            note={note.note}
+            image={note.image}
+            description={note.description}
+            
+          />
+        })
+      }
+    </div>
+  </div>
+	</div>
+</Layout>

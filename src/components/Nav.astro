@@ -27,7 +27,10 @@ import SiteStamp from './SiteStamp.astro';
         dark:bg-background-dark
         " style="white-space: nowrap;" href="/"><b>Zac's digital garden</b></a>
     </div>
-    <ThemeToggle classNames="sm:block hidden" client:load />
+    <div class="flex gap-4">
+      <a class="h-fit font-title text-xl dark:transition dark:ease-in-out hover:text-primary  hover:dark:text-primary-dark dark:text-color-text-dark" href="/about">About</a>
+      <ThemeToggle classNames="sm:block hidden text-sm h-fit" client:load />
+    </div>
   </div>
   <a id="site-logo-mobile" href="/">
     <SiteStamp classNames="hidden dark:block dark:sm:hidden sm:hidden mx-auto" textColor="#e9efea" />
