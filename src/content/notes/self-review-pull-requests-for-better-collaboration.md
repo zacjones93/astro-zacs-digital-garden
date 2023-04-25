@@ -14,7 +14,7 @@ Not all code is created equal, some code you spent hours sweating over tweaking 
 
 But to the reviewer, each of these instances is just another line of code changed that they need to skim.
 
-In comes the “LGMT 👍” with the approve button mashed without a second thought.
+In comes the "LGTM 👍” with the approve button mashed without a second thought.
 
 We all know they just skimmed the files changed, clicked around on the preview deploy and thought “Good enough, works on my machine.”
 
@@ -52,4 +52,4 @@ Some points in code that are worth highlighting:
 
 The goal here is to bring your future self and teammates the context you are holding in your head AND stimulate conversation around the changes that are made so collectively you all can make the best decisions possible. 
 
-Even if you get a “LGMT 👍” after doing a self review, you did your best to communicate what changes were made and the intentions behind them.
+Even if you get a "LGTM 👍” after doing a self review, you did your best to communicate what changes were made and the intentions behind them.
