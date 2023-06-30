@@ -2,6 +2,7 @@
 title: Zacs Official Sourdough Recipe and Schedule
 tags: baking
 noteIcon: /note-images/pixel-loaf.png
+image: /note-images/og-image-sourdough.png
 ---
 ## Introduction
 
