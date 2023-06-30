@@ -47,7 +47,7 @@ This recipe works great for pizza dough as well. Instead of the shaping step, I 
   </div>
 
   <div class="sm:w-1/2">
-    <strong class="dark:text-color-text-dark">Smaller loaf ratios</strong>
+    <strong class="dark:text-color-text-dark">Smaller Loaf Ratios</strong>
     <ul>
       <li>450g - Bread Flour</li>
       <li>9g   - Salt (2% total flour)</li>
