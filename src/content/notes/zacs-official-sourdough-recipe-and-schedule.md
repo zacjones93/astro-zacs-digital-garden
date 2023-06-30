@@ -74,7 +74,11 @@ This recipe works great for pizza dough as well. Instead of the shaping step, I 
     <li class=" list-disc py-0">Add flour
       <ul class="mt-0">
         <li class=" list-disc py-0">Lobster pinch to incorporate</li>
-        <li class=" list-disc py-0">Rubaud method to strengthen gluten</li>
+        <li class=" list-disc py-0"><a 
+                                      href="https://www.youtube.com/watch?v=pxPxoUagD3I&t=43s"
+                                      rel="noopener noreferrer"
+                                      target="_blank"
+                                      class="no-underline border-b-2 border-solid border-b-primary p-[2px] rounded hover:bg-primary external-link font-body dark:border-b-primary-dark dark:hover:bg-primary-dark transition-all ease-in-out delay-150 dark:hover:text-color-text-dark dark:text-color-text-dark">Rubaud method</a> to strengthen gluten</li>
         <li class=" list-disc py-0">Do this method for 5-10 minutes</li>
       </ul>
     </li>
@@ -87,7 +91,7 @@ This recipe works great for pizza dough as well. Instead of the shaping step, I 
 <div class="flex gap-4 relative mt-12">
   <span id="bulk-ferment" class="not-prose absolute -left-24 top-8 bg-card-background rounded py-2 px-4 mb-16 select-none -rotate-90 w-fit h-fit  border-b-2 border-b-primary text-lg dark:bg-card-background-dark dark:text-color-text-dark dark:border-b-primary-dark">Ferment</span>
   <div>
-    <strong class="dark:text-color-text-dark">Let rest for 30 minutes, we’re starting the stretch and fold process</strong>
+    <strong class="dark:text-color-text-dark">Let rest for 30 minutes, we’re starting the <a href="https://youtu.be/YPJixLxMReg?t=60" rel="noopener noreferrer" target="_blank" class="no-underline border-b-2 border-solid border-b-primary p-[2px] rounded hover:bg-primary external-link font-body dark:border-b-primary-dark dark:hover:bg-primary-dark transition-all ease-in-out delay-150 dark:hover:text-color-text-dark dark:text-color-text-dark font-black">stretch and fold process</a></strong>
       <ul>
         <li class=" list-disc py-0">Wet your hands</li>
         <li class=" list-disc py-0">Pull the dough and fold it over on itself</li>
@@ -107,12 +111,12 @@ This recipe works great for pizza dough as well. Instead of the shaping step, I 
   <div class="mt-12">
     <strong class="dark:text-color-text-dark">Pre-shaping</strong>
       <ul>
-        <li class=" list-disc py-0">At this point it should pass the ‘window pane’ test but I’ve found it’s usually good to go at this point.</li>
+        <li class=" list-disc py-0">At this point it should pass the <a href="https://www.thekitchn.com/bakers-techniques-how-to-do-th-70784" rel="noopener noreferrer" target="_blank" class="no-underline border-b-2 border-solid border-b-primary p-[2px] rounded hover:bg-primary external-link font-body dark:border-b-primary-dark dark:hover:bg-primary-dark transition-all ease-in-out delay-150 dark:hover:text-color-text-dark dark:text-color-text-dark">‘window pane’ test</a> but I’ve found it’s usually good to go at this point.</li>
         <li class=" list-disc py-0">If it’s noticeably cold you might want to extend bulk ferment a little longer</li>
         <li class=" list-disc py-0">Lightly flour a surface</li>
         <li class=" list-disc py-0">Do one last stretch and fold (to get the dough off the bowl) and tip over</li>
         <li class=" list-disc py-0">Dump dough onto surface</li>
-        <li class=" list-disc py-0">Use the scraper to pull the dough under itself to create tension in the doughs surface (preshape the dough)</li>
+        <li class=" list-disc py-0">Use the scraper to pull the dough under itself to create tension in the doughs surface (<a href="https://youtu.be/Koab3fxN4t4?t=140" rel="noopener noreferrer" target="_blank" class="no-underline border-b-2 border-solid border-b-primary p-[2px] rounded hover:bg-primary external-link font-body dark:border-b-primary-dark dark:hover:bg-primary-dark transition-all ease-in-out delay-150 dark:hover:text-color-text-dark dark:text-color-text-dark">preshape the dough</a>)</li>
         <li class=" list-disc py-0">Let rest for 15-30 minutes (people call this a bench rest)</li>
       </ul>
   <strong class="dark:text-color-text-dark">Final shaping</strong>
@@ -120,8 +124,8 @@ This recipe works great for pizza dough as well. Instead of the shaping step, I 
       <li class=" list-disc py-0">We want to build more tension in the dough so it has a nice oven spring
           <ul>
             <li class=" list-disc py-0">video says use rice flour but a little extra normal flour is fine for the banneton dusting</li>
-            <li class=" list-disc py-0">If you brought the circle banneton</li>
-            <li class=" list-disc py-0">If its a boule shape (the longer one)</li>
+            <li class=" list-disc py-0">If you brought the <a href="https://www.youtube.com/watch?v=h7eqwYLv2tI" rel="noopener noreferrer" target="_blank" class="no-underline border-b-2 border-solid border-b-primary p-[2px] rounded hover:bg-primary external-link font-body dark:border-b-primary-dark dark:hover:bg-primary-dark transition-all ease-in-out delay-150 dark:hover:text-color-text-dark dark:text-color-text-dark">circle banneton</a></li>
+            <li class=" list-disc py-0">If its a <a href="https://youtu.be/rBH_NsTeNzE?t=461" rel="noopener noreferrer" target="_blank" class="no-underline border-b-2 border-solid border-b-primary p-[2px] rounded hover:bg-primary external-link font-body dark:border-b-primary-dark dark:hover:bg-primary-dark transition-all ease-in-out delay-150 dark:hover:text-color-text-dark dark:text-color-text-dark">boule shape</a> (the longer one)</li>
           </ul>
       </li>
     </ul>
@@ -146,7 +150,7 @@ This recipe works great for pizza dough as well. Instead of the shaping step, I 
 <div class="flex gap-4 relative">
   <span id="bake" class="not-prose absolute -left-24 top-4 bg-card-background rounded py-2 px-4 mb-16 select-none -rotate-90 w-fit h-fit  border-b-2 border-b-primary text-lg dark:bg-card-background-dark dark:text-color-text-dark dark:border-b-primary-dark">Bake</span>
   <div class="">
-    <strong class="dark:text-color-text-dark">Score the bread</strong>
+    <strong class="dark:text-color-text-dark"><a href="https://youtu.be/W-9gDmtmT4Y" rel="noopener noreferrer" target="_blank" class="no-underline border-b-2 border-solid border-b-primary p-[2px] rounded hover:bg-primary external-link font-body dark:border-b-primary-dark dark:hover:bg-primary-dark transition-all ease-in-out delay-150 dark:hover:text-color-text-dark dark:text-color-text-dark font-black">Score the bread</a></strong>
       <ul>
         <li class=" list-disc py-0">flip the the bread on some parchment paper</li>
         <li class=" list-disc py-0">You can get fancy with it or just score a 1/2” through the top</li>
@@ -166,3 +170,25 @@ This recipe works great for pizza dough as well. Instead of the shaping step, I 
       </ul>
   </div>
 </div>
+
+<style>
+  .external-link {
+    text-decoration: none;
+    border-bottom: 1px solid $color-border;
+    color: $color-text;
+    padding: 2px;
+    border-radius: $border-radius;
+  }
+  .external-link:hover {
+    color: black !important;
+    background: $color-border;
+    border-bottom: 1px solid $color-border;
+  }
+  .external-link:after {
+    position: relative;
+    top: -0.5em;
+    font-size: 0.7em;
+    content: "↗";
+    color: #aaaaaa;
+  }
+</style>

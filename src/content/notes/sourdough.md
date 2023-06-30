@@ -4,19 +4,21 @@ tags: baking
 noteIcon: /note-images/pixel-loaf.png
 ---
 
+My most successful recipe:
 
-[Good blog series](https://www.kingarthurbaking.com/learn/guides/sourdough)
+- [[Zacs Official Sourdough Recipe and Schedule]]
 
-Would be good to [[sales safari]] it
+
+Other Sourdough guides:
 
 - [[Hydrate dry sourdough starter]]
 
-My most successful recipe:
-- [[Sourdough Recipe and Schedule]]
-
-
-
-Previous recipes:
-
 - [[Whole Grain Sourdough]]
+
+
+
+Would be good to [[sales safari]] it
+
+[Good blog series](https://www.kingarthurbaking.com/learn/guides/sourdough)
+
 

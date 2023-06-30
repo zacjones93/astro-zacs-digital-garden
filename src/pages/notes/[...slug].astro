@@ -16,7 +16,7 @@ const { Content } = await entry.render();
 
 let name
 switch (true) {
-  case entry.data.title === 'Sourdough Recipe and Schedule':
+  case entry.data.title === 'Zacs Official Sourdough Recipe and Schedule':
     name = entry.data.title
     break;
   default:
@@ -27,7 +27,7 @@ switch (true) {
 ---
 
 <Switch name={name}>
-    <SourdoughRecipeNoteLayout content={entry.data} slot="Sourdough Recipe and Schedule">
+    <SourdoughRecipeNoteLayout content={entry.data} slot="Zacs Official Sourdough Recipe and Schedule">
       <Content />
     </SourdoughRecipeNoteLayout>
   <NoteLayout content={entry.data}>
