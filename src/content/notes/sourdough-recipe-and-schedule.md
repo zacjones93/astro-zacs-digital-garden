@@ -1,5 +1,5 @@
 ---
-title: Sourdough Recipe and Schedule
+title: Zacs Official Sourdough Recipe and Schedule
 tags: baking
 noteIcon: /note-images/pixel-loaf.png
 ---
