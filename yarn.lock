@@ -960,6 +960,11 @@ astring@^1.8.0:
   resolved "https://registry.yarnpkg.com/astring/-/astring-1.8.4.tgz#6d4c5d8de7be2ead9e4a3cc0e2efb8d759378904"
   integrity sha512-97a+l2LBU3Op3bBQEff79i/E4jMD2ZLFD8rHx9B6mXyB2uQwhJQYfiDqUwtfjF4QA1F2qs//N6Cw8LetMbQjcw==
 
+astro-headless-ui@^0.0.30:
+  version "0.0.30"
+  resolved "https://registry.yarnpkg.com/astro-headless-ui/-/astro-headless-ui-0.0.30.tgz#06e235334953bb3e3547d1a12489d21699c80cd5"
+  integrity sha512-Txj0uoZBa2kY+3Uqcc+fSGpCZpxZkHd2zGo24Nac3r2TDrbEYNAGQH3BiUcUhQzTSpeDvqAvr1S5vcM96sviLQ==
+
 astro@^2.0.14:
   version "2.0.14"
   resolved "https://registry.yarnpkg.com/astro/-/astro-2.0.14.tgz#3e71de6e3a41c508d3b45e8bf21846c3ceb7f455"

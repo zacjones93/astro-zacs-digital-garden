@@ -1,6 +1,8 @@
 ---
 import { getCollection } from 'astro:content';
 import NoteLayout from '@layouts/NoteLayout.astro';
+import SourdoughRecipeNoteLayout from '@layouts/SourdoughRecipeNoteLayout.astro';
+import { Switch, When } from 'astro-headless-ui';
 
 export async function getStaticPaths() {
   const blogEntries = await getCollection('notes');
@@ -11,7 +13,24 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await entry.render();
+
+let name
+switch (true) {
+  case entry.data.title === 'Sourdough Recipe and Schedule':
+    name = entry.data.title
+    break;
+  default:
+    name = 'default'
+}
+
+
 ---
-<NoteLayout content={entry.data}>
-  <Content />
-</NoteLayout>
+
+<Switch name={name}>
+    <SourdoughRecipeNoteLayout content={entry.data} slot="Sourdough Recipe and Schedule">
+      <Content />
+    </SourdoughRecipeNoteLayout>
+  <NoteLayout content={entry.data}>
+    <Content />
+  </NoteLayout>
+</Switch>

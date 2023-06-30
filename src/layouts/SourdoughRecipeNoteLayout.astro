@@ -1,0 +1,153 @@
+---
+export interface Props {
+	content: {
+		title: string;
+		description?: string;
+		pubDate?: string;
+		updatedDate?: string;
+		image?: string;
+    noteIcon?: string;
+	};
+}
+const {
+	 content: {title, description, pubDate, updatedDate, image, noteIcon}
+} = Astro.props;
+
+import BaseLayout from '@layouts/BaseLayout.astro';
+import { Image } from '@astrojs/image/components';
+import graph from '../../public/tagged_notes_graph.json'
+import { getHash } from '@lib/hashNoteTitles'
+import InternalLink from '@components/InternalLink.astro';
+import NoteGraph from '@components/NoteGraph.html';
+import {sentenceCase} from 'text-case'
+
+let hashedTitle = getHash(title)
+let noteEdges = graph.edges.filter((edge) => {
+  return hashedTitle === edge.target
+})
+let linkedNotes = noteEdges.map((edge) => {
+  let nodes = graph.nodes.filter((node) => {
+      return node.id === edge.source
+    })
+  return nodes[0]
+}).filter(x => !!x)
+
+
+---
+
+<BaseLayout title={title} description={description} image={image} >
+    <main class="blog-content mb-10">
+      <article class="mx-4">
+        {image && <Image class="object-fit rounded mx-auto mb-8" width={720} height={360} src={image} alt="cover image"/>}
+        <div class="flex place-items-start">
+          {noteIcon && <Image
+            class="block mr-2"
+            src={noteIcon}
+            height={40}
+            width={30} 
+            aspectRatio="979:1281" 
+            format="png" 
+            alt="a pixeleted plant"
+          /> }
+          <h1 class="my-1 text-4xl font-bold font-title dark:text-color-text-dark transition ease-in-out">{title}</h1>
+        </div>
+        {pubDate && <time>{pubDate}</time>}
+        {description && <p class="font-body dark:text-color-text-dark">{description}</p>}
+        {
+          updatedDate && (
+            <div>
+              Last updated on <time>{updatedDate}</time>
+            </div>
+          )
+        }
+        <hr class="border-t border-solid border-color-subtext my-4" />
+        <div class="sm:grid sm:grid-cols-8">
+          <div class="col-span-6 font-body dark:text-color-text-dark prose lg:prose-lg">
+            <slot />
+          </div>
+          <side class="col-span-2 text-sm ml-4">
+            <div>
+              <h3 class="text-xl mb-4 font-medium mt-4 font-subtitle dark:text-color-text-dark">Notes mentioning this note</h3>
+              {
+                (linkedNotes.length > 0) && (
+                  <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
+                  {linkedNotes.map(note => {
+                    return (<div class="bg-card-background dark:bg-card-background-dark text-md p-4 font-body rounded-xl dark:text-color-text-dark">
+                      <b><InternalLink href={note.path} title={sentenceCase(note.label)} /></b><br>
+                    </div>)
+                  })}
+                </div>)
+              }
+              {
+                (linkedNotes.length === 0) && (
+                  <div class="bg-card-background dark:bg-card-background-dark text-sm p-4 rounded-xl">
+                    <p class="font-body dark:text-color-text-dark">
+                      There are no notes linking to this note.
+                    </p>
+                  </div>
+                )
+              }
+            </div>
+            <div class="sticky top-4 z-40 bg-card-background dark:bg-card-background-dark text-md p-4 font-body rounded-xl dark:text-color-text-dark mt-4">
+              <h3 class="text-xl mb-4 font-medium mt-4 font-subtitle dark:text-color-text-dark">Example Schedule</h3>
+              <ul class="no-underline">
+                <li class=" list-none">9:00 AM </li>
+                  <a class="ml-8 text-sm no-underline hover:bg-primary dark:hover:bg-primary-dark transition-all ease-in-out  px-2 py-1 rounded" href="/notes/sourdough-recipe-and-schedule#mixing">Mix Dough</a>
+                <li class=" list-none">9:30 AM - 12:00PM </li>
+                  <a class="ml-8 text-sm no-underline hover:bg-primary dark:hover:bg-primary-dark transition-all ease-in-out  px-2 py-1 rounded" href="/notes/sourdough-recipe-and-schedule#bulk-ferment">Stretch and fold</a>
+                <li class=" list-none">12:00PM - 3:00PM </li>
+                  <a class="ml-8 text-sm no-underline hover:bg-primary dark:hover:bg-primary-dark transition-all ease-in-out  px-2 py-1 rounded" href="/notes/sourdough-recipe-and-schedule#bulk-ferment">Bulk Fermentation</a>
+                <li class=" list-none">3:00PM - 3:30PM </li>
+                  <a class="ml-8 text-sm no-underline hover:bg-primary dark:hover:bg-primary-dark transition-all ease-in-out  px-2 py-1 rounded" href="/notes/sourdough-recipe-and-schedule#shape">Preshape and final rest</a>
+                <li class=" list-none">3:30 PM </li>
+                  <a class="ml-8 text-sm no-underline hover:bg-primary dark:hover:bg-primary-dark transition-all ease-in-out  px-2 py-1 rounded" href="/notes/sourdough-recipe-and-schedule#shape">Final shape</a>
+                <li class=" list-none">3:30 PM - 5:00 PM</li>
+                  <a class="ml-8 text-sm no-underline hover:bg-primary dark:hover:bg-primary-dark transition-all ease-in-out  px-2 py-1 rounded" href="/notes/sourdough-recipe-and-schedule#proof">Final Proof</a>
+                <li class=" list-none">5:00PM - 6:00PM</li>
+                  <a class="ml-8 text-sm no-underline hover:bg-primary dark:hover:bg-primary-dark transition-all ease-in-out  px-2 py-1 rounded" href="/notes/sourdough-recipe-and-schedule#proof">Place in fridge</a>
+                  <a class="ml-8 text-sm no-underline hover:bg-primary dark:hover:bg-primary-dark transition-all ease-in-out  px-2 py-1 rounded" href="/notes/sourdough-recipe-and-schedule#proof">Cold Ferment in Fridge</a>
+                  <a class="ml-8 text-sm no-underline hover:bg-primary dark:hover:bg-primary-dark transition-all ease-in-out  px-2 py-1 rounded" href="/notes/sourdough-recipe-and-schedule#bake">Preheat oven</a>
+                <li class=" list-none">6:00 PM - 6:40 PM</li>
+                  <a class="ml-8 text-sm no-underline hover:bg-primary dark:hover:bg-primary-dark transition-all ease-in-out px-2 py-1 rounded" href="/notes/sourdough-recipe-and-schedule#bake">Bake</a>
+              </ul>
+            </div>
+          </side>
+      </div>
+      </article>
+    </main>
+</BaseLayout>
+
+
+
+<style is:global>
+  main { 
+    @apply space-y-4
+  }
+  h2 {
+    @apply mx-auto w-fit sm:mx-0 font-semibold text-3xl text-color-text dark:text-color-text-dark font-subtitle my-8
+  }
+  h3 {
+    @apply mx-auto w-fit sm:mx-0 font-semibold text-2xl text-color-text dark:text-color-text-dark font-subtitle my-8 ml-4
+  }
+  h4 {
+    @apply mx-auto w-fit sm:mx-0 text-xl font-bold text-color-text dark:text-color-text-dark font-subtitle my-8
+  }
+  p {
+    @apply text-xl sm:text-lg leading-7 text-color-text dark:text-color-text-dark font-body
+  }
+  li {
+    @apply my-2 list-disc ml-6 font-body text-xl sm:text-lg
+  }
+
+  a {
+    @apply text-xl sm:text-lg leading-7 text-color-text dark:text-color-text-dark font-body underline cursor-pointer
+  }
+
+  #site-logo {
+    @apply no-underline
+  }
+
+  #site-logo-mobile {
+    @apply no-underline
+  }
+</style>
