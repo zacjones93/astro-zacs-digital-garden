@@ -60,8 +60,8 @@ This recipe works great for pizza dough as well. Instead of the shaping step, I 
 
 ## Recipe
 
-<div class="flex gap-4 relative">
-  <span id="mixing" class="not-prose my-0 absolute -left-24 top-4 bg-card-background rounded py-2 px-4  z-40 mb-16 select-none -rotate-90 w-fit h-fit  border-b-2 border-b-primary font-medium dark:bg-card-background-dark dark:text-color-text-dark dark:border-b-primary-dark">Mixing</span>
+<div class="flex flex-col gap-4 relative">
+  <span id="mixing" class="not-prose my-0 lg:absolute self-center lg:-rotate-90 -left-24 top-4 bg-card-background rounded py-2 px-4 z-40 select-none  lg:w-fit w-full text-center h-fit  border-b-2 border-b-primary font-medium dark:bg-card-background-dark dark:text-color-text-dark dark:border-b-primary-dark">Mixing</span>
   <div class="">
    <strong class="dark:text-color-text-dark">The night before, mix starter</strong>
     <li class=" list-disc py-0">20g starter, 60g water, 60g flour</li>
@@ -70,7 +70,7 @@ This recipe works great for pizza dough as well. Instead of the shaping step, I 
     <li class=" list-disc py-0">Water in mixing bowl</li>
     <li class=" list-disc py-0">Flour to the side</li>
    <strong class="dark:text-color-text-dark">Mix until fully incorporated</strong>
-    <li class=" list-disc py-0">Incorporate starter with water and stir until bubbly and </li>dissolved
+    <li class=" list-disc py-0">Incorporate starter with water and stir until bubbly and dissolved</li>
     <li class=" list-disc py-0">Add salt and stir to dissolve</li>
     <li class=" list-disc py-0">Add flour
       <ul class="mt-0">
@@ -89,8 +89,8 @@ This recipe works great for pizza dough as well. Instead of the shaping step, I 
     <li class=" list-disc py-0">20g water</li>
   </div>
 </div>
-<div class="flex gap-4 relative mt-12">
-  <span id="bulk-ferment" class="not-prose absolute -left-24 top-8 bg-card-background rounded py-2 px-4 mb-16 select-none -rotate-90 w-fit h-fit  border-b-2 border-b-primary text-lg dark:bg-card-background-dark dark:text-color-text-dark dark:border-b-primary-dark">Ferment</span>
+<div class="flex flex-col  gap-4 relative mt-12">
+  <span id="bulk-ferment" class="not-prose lg:absolute self-center -left-24 top-8 bg-card-background rounded py-2 px-4 select-none lg:-rotate-90 lg:w-fit w-full text-center h-fit  border-b-2 border-b-primary text-lg dark:bg-card-background-dark dark:text-color-text-dark dark:border-b-primary-dark">Ferment</span>
   <div>
     <strong class="dark:text-color-text-dark">Let rest for 30 minutes, we’re starting the <a href="https://youtu.be/YPJixLxMReg?t=60" rel="noopener noreferrer" target="_blank" class="no-underline border-b-2 border-solid border-b-primary p-[2px] rounded hover:bg-primary external-link font-body dark:border-b-primary-dark dark:hover:bg-primary-dark transition-all ease-in-out delay-150 dark:hover:text-color-text-dark dark:text-color-text-dark font-black">stretch and fold process</a></strong>
       <ul>
@@ -107,9 +107,9 @@ This recipe works great for pizza dough as well. Instead of the shaping step, I 
     <strong class="dark:text-color-text-dark">Let it bulk ferment (sit there) for 3 more hours</strong>
   </div>
 </div>
-<div class="flex gap-4 relative ">
-  <span id="shape" class="not-prose absolute -left-24 top-16 bg-card-background rounded py-2 px-4 mb-16 select-none -rotate-90 w-fit h-fit  border-b-2 border-b-primary text-lg dark:bg-card-background-dark dark:text-color-text-dark dark:border-b-primary-dark">Shape</span>
-  <div class="mt-12">
+<div class="flex flex-col gap-4 relative mt-12">
+  <span id="shape" class="not-prose lg:absolute self-center -left-24 top-16 bg-card-background rounded py-2 px-4  select-none lg:-rotate-90 lg:w-fit w-full text-center h-fit  border-b-2 border-b-primary text-lg dark:bg-card-background-dark dark:text-color-text-dark dark:border-b-primary-dark">Shape</span>
+  <div class="">
     <strong class="dark:text-color-text-dark">Pre-shaping</strong>
       <ul>
         <li class=" list-disc py-0">At this point it should pass the <a href="https://www.thekitchn.com/bakers-techniques-how-to-do-th-70784" rel="noopener noreferrer" target="_blank" class="no-underline border-b-2 border-solid border-b-primary p-[2px] rounded hover:bg-primary external-link font-body dark:border-b-primary-dark dark:hover:bg-primary-dark transition-all ease-in-out delay-150 dark:hover:text-color-text-dark dark:text-color-text-dark">‘window pane’ test</a> but I’ve found it’s usually good to go at this point.</li>
@@ -134,8 +134,8 @@ This recipe works great for pizza dough as well. Instead of the shaping step, I 
 </div>
 
 
-<div class="flex gap-4 relative">
-  <span id="proof" class="not-prose absolute -left-24 top-4 bg-card-background rounded py-2 px-4 mb-16 select-none -rotate-90 w-fit h-fit  border-b-2 border-b-primary text-lg dark:bg-card-background-dark dark:text-color-text-dark dark:border-b-primary-dark">Proof</span>
+<div class="flex flex-col  gap-4 relative">
+  <span id="proof" class="not-prose lg:absolute self-center -left-24 top-4 bg-card-background rounded py-2 px-4 select-none lg:-rotate-90 lg:w-fit w-full text-center h-fit  border-b-2 border-b-primary text-lg dark:bg-card-background-dark dark:text-color-text-dark dark:border-b-primary-dark">Proof</span>
   <div class="">
     <strong class="dark:text-color-text-dark">Proof dough</strong>
     <ul>
@@ -148,8 +148,8 @@ This recipe works great for pizza dough as well. Instead of the shaping step, I 
 </div>
 
 
-<div class="flex gap-4 relative">
-  <span id="bake" class="not-prose absolute -left-24 top-4 bg-card-background rounded py-2 px-4 mb-16 select-none -rotate-90 w-fit h-fit  border-b-2 border-b-primary text-lg dark:bg-card-background-dark dark:text-color-text-dark dark:border-b-primary-dark">Bake</span>
+<div class="flex flex-col  gap-4 relative">
+  <span id="bake" class="not-prose lg:absolute self-center -left-24 top-4 bg-card-background rounded py-2 px-4 select-none lg:-rotate-90 lg:w-fit w-full text-center h-fit  border-b-2 border-b-primary text-lg dark:bg-card-background-dark dark:text-color-text-dark dark:border-b-primary-dark">Bake</span>
   <div class="">
     <strong class="dark:text-color-text-dark"><a href="https://youtu.be/W-9gDmtmT4Y" rel="noopener noreferrer" target="_blank" class="no-underline border-b-2 border-solid border-b-primary p-[2px] rounded hover:bg-primary external-link font-body dark:border-b-primary-dark dark:hover:bg-primary-dark transition-all ease-in-out delay-150 dark:hover:text-color-text-dark dark:text-color-text-dark font-black">Score the bread</a></strong>
       <ul>
