@@ -12,7 +12,7 @@ Would be good to [[sales safari]] it
 - [[Hydrate dry sourdough starter]]
 
 My most successful recipe:
-- [[sourdough-recipe-and-schedule]]
+- [[Sourdough Recipe and Schedule]]
 
 
 
