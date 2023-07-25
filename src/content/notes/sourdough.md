@@ -8,7 +8,7 @@ My most successful recipe:
 
 - [[Zacs Official Sourdough Recipe and Schedule]]
 
-- [[determine-if-your-sourdough-is-well-proofed]]
+- [[Determine if your sourdough is well proofed]]
 
 
 Other Sourdough guides:

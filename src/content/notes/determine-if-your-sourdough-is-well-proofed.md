@@ -1,6 +1,8 @@
 ---
 title: Determine if your sourdough is well proofed
 tags: sourdough
+image: /images/og-image-sourdough-proof.png
+noteIcon: /note-images/pixel-loaf.png
 ---
 
 Getting a sense for how well proofed your sourdough is can take some time to develop. 
@@ -15,6 +17,10 @@ Generally speaking, you want your crumb to look 'airy' and 'open'. That means th
 
 Here is an example of a past loaf I made that was well proofed:
 
-![sourdough crumb](/note-images/sourdough-crumb.jpg)
+![sourdough crumb](/note-images/sourdough-crumb.jpeg)
 
 While you can see some of the bubbles were crompressed, this looks more to do with rough handling (might have slammed the loaf out of the banneton) than overproofing. The crumb is still very open and airy with each bubble looking like it was stretched to it's fullest capacity.
+
+Compare that to this loaf which is a pancake on top of looking gummy and dense:
+
+![sourdough crumb](/note-images/sourdough-crumb-underproofed.jpeg)
