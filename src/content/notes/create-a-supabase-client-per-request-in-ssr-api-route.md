@@ -19,6 +19,10 @@ const supabase = createClient(
   })
 ```
 
+Commit where I implemented this:
+
+- [create games with supabase RLS enabled](https://github.com/zacjones93/greedy-app-astro/commit/c20a8040460097662c0984e660ae0d753f43cb65)
+
 
 [reference](https://github.com/supabase/gotrue-js/pull/340#issuecomment-1218065610)
 
