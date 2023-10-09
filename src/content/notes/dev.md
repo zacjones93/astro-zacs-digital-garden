@@ -18,6 +18,11 @@ noteIcon: /images/dev-plant.png
 - [[What is Doom Emacs]]
 
 
+## Astro SSR
+- [[API Routes in Astro must be TS]]
+- [[Create a Supabase Client Per Request in SSR API Route]]
+
+
 
 ## egghead
 

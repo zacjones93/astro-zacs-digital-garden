@@ -13,6 +13,8 @@ noteIcon: /images/design-plant-v2.png
 
 - [[shoulditrain.today]]
 
+- [[landing page design]]
+
 ## Big Ideas
 
 - [[Design Direction]]
