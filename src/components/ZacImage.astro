@@ -1,0 +1,124 @@
+---
+
+const { className } = Astro.props;
+
+---
+
+<section class={className} >
+  <div class="pop-out-image zac">
+    <figure  >
+      <img src="/note-images/nc-background.png" />
+    </figure>
+    <figure aria-hidden="true">
+      <img src="/note-images/zac-miso-no-background.png" />
+    </figure>
+  </div>
+</section>
+
+<style>
+  section {
+    display: grid;
+    place-items: center;
+    max-width: 100%;
+    width: fit-content;
+  }
+
+  figure {
+    border-radius: 1rem;
+    margin: 0;
+    overflow: hidden;
+    inset: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  figure:last-of-type {
+    --b: 2;
+    overflow: visible;
+    clip-path: inset(-200% 0 0 0);
+  }
+
+  .pop-out-image {
+    view-timeline-name: --popper;
+    aspect-ratio: 1;
+    position: relative;
+    width: clamp(100px, 45vmin, 300px);
+  }
+
+  figure img {
+    aspect-ratio: 1;
+    animation: slide-up linear both;
+    animation-timeline: --popper;
+    animation-range: entry 100% cover 50%;
+    left: 50%;
+    object-fit: cover;
+    position: absolute;
+    translate: var(--x1, -50%) var(--y1, 0);
+    top: 0%;
+    width: var(--size, 100%);
+  }
+
+  .zac {
+    --size: 170%;
+    --y2: -40%;
+  }
+
+  .mtb {
+    --size: 185%;
+    --y2: -45%;
+  }
+
+  .mtb img {
+    object-position: right;
+  }
+
+  .mtx {
+    --size: 170%;
+    --x1: -52%;
+    --y2: -40%;
+    --y1: -10%;
+  }
+
+  .mtx img {
+    object-position: right;
+  }
+
+
+  @keyframes slide-up {
+    to {
+      translate: var(--x1, -50%) var(--y2, -20%);
+      
+    }
+  }
+
+  section, section * {
+    transform-style: preserve-3d;
+  }
+
+  section {
+    perspective: 30vh;
+  }
+
+  .pop-out-image, figure {
+    transition: transform 0.2s;
+  }
+
+  [data-exploded] .pop-out-image {
+    transform: rotateX(-14deg) rotateY(55deg);
+  }
+  .pop-out-image {
+    outline: 4px dashed transparent;
+    transition: outline 0.2s;
+    border-radius: 1rem;
+  }
+  [data-exploded] .pop-out-image {
+    outline-color: hsl(0 0% 100% / 0.75);
+  }
+
+  [data-exploded] .pop-out-image figure:last-of-type {
+    transform: translate3d(0, 0, 100px);
+  }
+  [data-exploded] .pop-out-image figure:first-of-type {
+    transform: translate3d(0, 0, -100px);
+  }
+</style>

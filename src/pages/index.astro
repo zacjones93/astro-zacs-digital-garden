@@ -4,6 +4,8 @@ import HomePageCard from '@components/HomePageCard.astro';
 import { Image } from '@astrojs/image/components';
 import InternalLink from '@components/InternalLink.astro';
 import ExternalLink from '@components/ExternalLink.astro';
+import ZacImage from '@components/ZacImage.astro';
+
 
 let featuredNotes = [{
   note: "Design",
@@ -74,6 +76,20 @@ let books = ["Badass Making Users Awesome", "The Mom Test",]
           />
         })
       }
+    </div>
+  </div>
+
+  <div class="flex flex-col sm:flex-row justify-evenly my-20 p-4 sm:p-0 ">
+    <ZacImage className="self-center mb-4"/>
+    <div class=" sm:w-1/2">
+      <h2 class="mx-auto w-fit sm:mx-0 font-semibold text-3xl text-color-text dark:text-color-text-dark font-subtitle"><a href="/about">About me</a></h2>
+      <p class="text-xl sm:text-lg leading-7 mt-4 text-color-text dark:text-color-text-dark font-body">
+        I'm a web developer and learner advocate with quite a few interests as you can see above.
+      </p>
+      <p class="text-xl sm:text-lg leading-7 mt-4 text-color-text dark:text-color-text-dark font-body">
+        I currently work at <ExternalLink href="https://egghead.io" title="egghead.io" /> wearing many hats. We are a small shop so my responsibilities range from onboarding new instructors, supporting course design and production, and building out features to improve the creating and learning experience on egghead. 
+      </p>
+      <p class="text-xl sm:text-lg leading-7 mt-4 text-color-text dark:text-color-text-dark font-body">I'm also a coach at Boise Crossfit and enjoy getting people to move better.</p>
     </div>
   </div>
 
