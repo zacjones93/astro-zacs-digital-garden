@@ -2,7 +2,6 @@
 import { getCollection } from 'astro:content';
 import NoteLayout from '@layouts/NoteLayout.astro';
 import SourdoughRecipeNoteLayout from '@layouts/SourdoughRecipeNoteLayout.astro';
-import WeightliftingLayout from '@layouts/WeightliftingLayout.astro';
 import { Switch, When } from 'astro-headless-ui';
 
 export async function getStaticPaths() {
@@ -20,9 +19,6 @@ switch (true) {
   case entry.data.title === 'Zacs Official Sourdough Recipe and Schedule':
     name = entry.data.title
     break;
-  case entry.data.title === 'Weight Lifting':
-    name = entry.data.title
-    break;
   default:
     name = 'default'
 }
@@ -34,9 +30,6 @@ switch (true) {
   <SourdoughRecipeNoteLayout content={entry.data} slot="Zacs Official Sourdough Recipe and Schedule">
     <Content />
   </SourdoughRecipeNoteLayout>
-  <WeightliftingLayout content={entry.data} slot="Weight Lifting">
-    <Content />
-  </WeightliftingLayout>
   <NoteLayout content={entry.data}>
     <Content />
   </NoteLayout>
