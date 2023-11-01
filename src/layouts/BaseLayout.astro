@@ -32,7 +32,7 @@ const { title, description, image } = Astro.props;
 
       <div class="flex justify-center gap-4">
         <a class="h-fit font-title text-xl dark:transition dark:ease-in-out hover:text-primary  hover:dark:text-primary-dark dark:text-color-text-dark sm:hidden block" href="/about">About</a>
-        <ThemeToggle classNames="sm:hidden block text-sm self-start" client:load />
+        <ThemeToggle classNames="sm:hidden block text-sm self-start" client:only="react" />
       </div>
     </div>
     

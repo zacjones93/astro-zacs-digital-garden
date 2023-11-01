@@ -29,7 +29,7 @@ import SiteStamp from './SiteStamp.astro';
     </div>
     <div class="flex gap-4 self-center">
       <a class="h-fit font-title text-xl dark:transition dark:ease-in-out hover:text-primary  hover:dark:text-primary-dark dark:text-color-text-dark hidden sm:block" href="/about">About</a>
-      <ThemeToggle classNames="sm:block hidden text-sm h-fit" client:load />
+      <ThemeToggle classNames="sm:block hidden text-sm h-fit" client:only="react" />
     </div>
   </div>
   <a id="site-logo-mobile" href="/">

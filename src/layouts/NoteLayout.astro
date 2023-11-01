@@ -14,7 +14,7 @@ const {
 } = Astro.props;
 
 import BaseLayout from '@layouts/BaseLayout.astro';
-import { Image } from '@astrojs/image/components';
+import { Image } from 'astro:assets';
 import graph from '../../public/tagged_notes_graph.json'
 import { getHash } from '@lib/hashNoteTitles'
 import InternalLink from '@components/InternalLink.astro';

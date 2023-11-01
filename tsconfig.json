@@ -1,12 +1,22 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "baseUrl": ".",
+    "baseUrl": "/Users/zacjones/Documents/02.Areas/personal/astro-zacs-digital-garden",
     "paths": {
-      "@components/*": ["src/components/*"],
-      "@assets/*": ["src/assets/*"],
-      "@layouts/*": ["src/layouts/*"],
-      "@lib/*": ["lib/*"]
-    }
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@assets/*": [
+        "src/assets/*"
+      ],
+      "@layouts/*": [
+        "src/layouts/*"
+      ],
+      "@lib/*": [
+        "lib/*"
+      ]
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
   }
 }
