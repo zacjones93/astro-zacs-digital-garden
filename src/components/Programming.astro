@@ -1,0 +1,448 @@
+---
+import cx from "classnames"
+
+export interface Props {
+  block: "first" | "second"
+}
+type Modalities = "M" | "W" | "G" | "MW" | "MG" | "WG" | "MWG";
+type Volume = "Low" | "Medium" | "High";
+type Priority = "Time" | "Task" | "Hybrid";
+type MovementPatterns = Array<"Squat" | "Hinge" | "Upper Press" | "Upper Pull" | "Lower Pull from Floor" | "Lunge/Step" | "Jump">
+type Time = "25-40" | "15-25" | "09-15" | "04-09" | "00-04" | "Heavy Day"
+type Format = "Single Modality" | "Couplet" | "Triplet" |"Chipper" | "Emom" | "Interval"  | "FGB" | "Buy in/Cash out"
+type Load = "Light" | "Moderate" | "Heavy" | "Bodyweight"
+
+type WorkoutCharacteristics = {
+  modalities: Modalities;
+  volume: Volume;
+  priority: Priority;
+  movement: MovementPatterns
+  time: Time;
+  format: Format;
+  load: Load;
+};
+
+type BlockWorkout = {
+  workout: string;
+  characteristics: WorkoutCharacteristics;
+};
+
+let { block } = Astro.props
+
+let firstBlockWorkouts: BlockWorkout[] = [
+	{
+		workout: 
+`18:00 AMRAP
+15 Box Jump 
+12 Push press
+9 Toes 2 Bar
+115/75`,
+  characteristics: {
+    modalities: "WG",
+    volume: "High",
+    priority: "Time",
+    load: "Moderate",
+    format: "Triplet",
+    movement: ["Jump", "Upper Press"],
+    time: "15-25"
+  },
+	},
+	{
+		workout: `5 rounds:
+50 double under
+10 Deadlift, 275/185 `,
+  characteristics: {
+    modalities: "MW",
+    volume: "Medium",
+    priority: "Task",
+    load: "Heavy",
+    format: "Couplet",
+    movement: ["Jump", "Lower Pull from Floor"],
+    time: "09-15"
+  },
+	},
+	{
+		workout: `1 mile run
+100 push up
+50 hang snatch, 95/65
+10 muscle up`,
+  characteristics: {
+      modalities: "MWG",
+      volume: "Medium",
+      priority: "Task",
+      load: "Light",
+      format: "Chipper",
+      movement: ["Upper Press", "Hinge"],
+      time: "15-25"
+    },
+	},
+	{
+		workout: `20:00 AMRAP w/ a partner
+30 kb swing
+30 burpee
+30 GHD`,
+  characteristics: {
+    modalities: "WG",
+    volume: "High",
+    priority: "Time",
+    load: "Light",
+    format: "Triplet",
+    movement: ["Hinge"],
+    time: "15-25"
+  },
+	},
+	{
+		workout: `3-30 cals
+ski erg
+bike erg`,
+  characteristics: {
+    modalities: "M",
+    volume: "Medium",
+    priority: "Task",
+    load: "Bodyweight",
+    format: "Couplet",
+    movement: ["Hinge"],
+    time: "15-25"
+  },
+	},
+	{
+		workout: `20 C+J 185/125
+100 Back squat
+100 pull up
+20 C+J`,
+  characteristics: {
+    modalities: "WG",
+    volume: "High",
+    priority: "Task",
+    load: "Heavy",
+    format: "Chipper",
+    movement: ["Squat", "Upper Press", "Lower Pull from Floor"],
+    time: "15-25"
+  },
+	},
+	{
+		workout: `3:00 on 3:00 off x 5
+6 bear complex
+max cal echo bike`,
+  characteristics: {
+      modalities: "MW",
+      volume: "Low",
+      priority: "Task",
+      load: "Moderate",
+      format: "Couplet",
+      movement: ["Squat", "Upper Press", "Lower Pull from Floor"],
+      time: "09-15"
+    },
+	},
+	{
+		workout: `20:00 AMRAP
+4 wall walk
+8 C2B
+12 alt. single leg squat`,
+  characteristics: {
+    modalities: "WG",
+    volume: "Medium",
+    priority: "Time",
+    load: "Bodyweight",
+    format: "Triplet",
+    movement: ["Squat"],
+    time: "15-25"
+  },
+	},
+  
+	{
+		workout: `4 shuttle run
+16-12-9-4 sandbag clean
+`,
+  characteristics: {
+      modalities: "MW",
+      volume: "Medium",
+      priority: "Task",
+      load: "Heavy",
+      format: "Couplet",
+      movement: ["Lower Pull from Floor"],
+      time: "15-25"
+    },
+	},
+	{
+		workout: `
+5.5.5.5.5 Press
+3.3.3.3.3 Push press
+1.1.1.1.1 Push jerk`,
+  characteristics: {
+      modalities: "W",
+      volume: "Low",
+      priority: "Task",
+      load: "Heavy",
+      format: "Triplet",
+      movement: ["Upper Press"],
+      time: "Heavy Day"
+    },
+	},
+	{
+		workout: `4 rounds for time
+500/400m row
+21 db box step over
+15 MB GHD sit up`,
+  characteristics: {
+      modalities: "MWG",
+      volume: "Medium",
+      priority: "Task",
+      load: "Moderate",
+      format: "Triplet",
+      movement: ["Lunge/Step", "Hinge"],
+      time: "15-25"
+    },
+	},
+	{
+		workout: `10:00 AMRAP
+10/7 push up
+10/7 cal c2 bike`,
+characteristics: {
+      modalities: "MG",
+      volume: "Medium",
+      priority: "Time",
+      load: "Bodyweight",
+      format: "Couplet",
+      movement: ["Upper Press"],
+      time: "09-15"
+    },
+	},
+];
+
+let secondBlockWorkouts: BlockWorkout[] = [
+{workout: `
+1-2-3-4-5-6-7-8-9-10 15:00 cap
+bench press, bw
+deadlift, 1.5 bw
+
+At 15:00
+5:00 AMRAP
+Row calories`,
+characteristics: {
+    modalities: "MW",
+    volume: "High",
+    priority: "Hybrid",
+    load: "Heavy",
+    format: "Triplet",
+    movement: ["Upper Press", "Lower Pull from Floor"],
+    time: "15-25"
+  },
+},
+  {workout: `for time:
+  100 GHD sit up
+  20 Shuttle Run, 20m
+
+  rx 70 ghd `,
+  characteristics: {
+      modalities: "MG",
+      volume: "Medium",
+      priority: "Task",
+      load: "Bodyweight",
+      format: "Couplet",
+      movement: ["Hinge",],
+      time: "09-15"
+    },
+  },
+  {workout: `Every 3:00 x16:
+  A: 6 back squat
+  B: 3 front squat
+
+  same weight each set`,
+  characteristics: {
+      modalities: "W",
+      volume: "Medium",
+      priority: "Task",
+      load: "Heavy",
+      format: "Couplet",
+      movement: ["Squat",],
+      time: "Heavy Day"
+    },},
+  
+  {workout: `
+12:00 AMRAP
+21 alt. db snatch, 70/50
+15/12 cal bike
+9 burpee over db`, 
+  characteristics: {
+      modalities: "MWG",
+      volume: "High",
+      priority: "Time",
+      load: "Moderate",
+      format: "Triplet",
+      movement: ["Hinge"],
+      time: "09-15"
+    },}, 
+  {workout: `10 rounds for time:
+  15 wall ball 20/14 to 10'
+  1 rope climb, 15'
+
+  Rx+ legless`,
+  characteristics: {
+      modalities: "WG",
+      volume: "Medium",
+      priority: "Task",
+      load: "Light",
+      format: "Couplet",
+      movement: ["Squat", "Upper Pull"],
+      time: "15-25"
+    },},
+  {
+    workout: `20 rounds "you go, I go"
+  20 double under
+  10 front rack reverse lunge
+  10 shoulder to overhead
+  20 double under
+
+  95/65 75/55 65/45`, 
+  characteristics: {
+      modalities: "MW",
+      volume: "High",
+      priority: "Task",
+      load: "Light",
+      format: "Triplet",
+      movement: ["Lunge/Step", "Jump", "Upper Press"],
+      time: "09-15"
+    },},
+  {
+    workout: `Every 4:00 x5:
+  9 unbroken snatch, 135/95
+  12 ring dip
+  15/12 cal echo
+
+  Rx 115/80 sc 95/65 -> 75/55`,
+  characteristics: {
+      modalities: "MWG",
+      volume: "Medium",
+      priority: "Task",
+      load: "Light",
+      format: "Interval",
+      movement: ["Hinge", "Upper Press"],
+      time: "09-15"
+    },
+  },
+  {
+    workout: `100/70 cal ski for time
+
+  *EMOM: 5 box jump 30/24"`,
+  characteristics: {
+      modalities: "MG",
+      volume: "Medium",
+      priority: "Task",
+      load: "Bodyweight",
+      format: "Couplet",
+      movement: ["Jump", "Hinge"],
+      time: "09-15"
+    },}, 
+  {
+  workout: `"Fran"
+  21-15-9
+  Thruster, 95/65
+  Pull up`,
+  characteristics: {
+    modalities: "WG",
+    volume: "Low",
+    priority: "Task",
+    load: "Light",
+    format: "Couplet",
+    movement: ["Squat", "Upper Press", "Upper Pull"],
+    time: "00-04"
+  },},
+  {workout: `Deadlift
+  5.5.5
+  3.3.3
+  1.1.1`,
+  characteristics: {
+    modalities: "W",
+    volume: "Low",
+    priority: "Task",
+    load: "Heavy",
+    format: "Single Modality",
+    movement: ["Lower Pull from Floor"],
+    time: "Heavy Day"
+  },},
+  {workout: `3 rounds for time
+  400m run
+  21 t2b
+  12 ohs
+
+  115/80 95/65 75/55 50`,
+  characteristics: {
+    modalities: "MWG",
+    volume: "Medium",
+    priority: "Task",
+    load: "Moderate",
+    format: "Triplet",
+    movement: ["Squat", "Upper Pull"],
+    time: "09-15"
+  },},
+  {workout: `
+50 db burpee box step over
+  25 rounds of holleyman 
+  5 wb
+  3 hspu
+  1 power clean 225/155`,
+  characteristics: {
+    modalities: "WG",
+    volume: "Medium",
+    priority: "Task",
+    load: "Heavy",
+    format: "Triplet",
+    movement: ["Lunge/Step", "Squat", "Lower Pull from Floor", "Upper Press"],
+    time: "15-25"
+  },}]
+
+let workoutGrid = block === "first" ? firstBlockWorkouts : secondBlockWorkouts
+---
+
+<div class="">
+<div class="text-sm grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1  mb-4">
+  {workoutGrid.map(({workout, characteristics}, index) => {
+    return (<div class="p-4 text-center  border border-slate-200 bg-slate-100 min-h-[16rem] min-w-[10rem] w-full cursor-default relative flex flex-col justify-between ">
+      <div class="absolute left-4 top-2 font-semibold text-lg z-30 text-[#03329b]">{index + 1}</div>
+      
+        <div class="whitespace-pre-wrap w-full font-bold">{workout}</div>
+        <div class="py-4">
+          <div class="flex justify-evenly w-full">
+            <div class="flex flex-col text-start space-y-2">
+              <div>
+                <div class="font-bold">Priority</div>
+                <div>{characteristics.priority}</div>
+              </div>
+              <div>
+                <div class="font-bold">Format</div>
+                <div>{characteristics.format} </div>
+              </div>
+              <div>
+                <div class="font-bold">Mode</div>
+                <div>{characteristics.modalities}</div>
+              </div>
+            </div>
+          
+            <div class="flex flex-col text-start space-y-2">
+              <div>
+                <div class="font-bold">Time</div>
+                <div>{characteristics.time}</div>
+              </div>
+              <div>
+                <div class="font-bold">Volume</div> 
+                <div>{characteristics.volume}</div> 
+              </div>
+              <div>
+                <div class="font-bold">Load</div>  
+                <div >{characteristics.load}</div>  
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="font-bold">Movement Patterns</div>
+          <div>{characteristics.movement.join(", ")} </div>
+        </div>
+      </div>)
+  })}</div>
+</div>
+
+
+
+

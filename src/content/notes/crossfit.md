@@ -56,4 +56,5 @@ These are evaluation sessions that [[CrossFit Route 7]] hosts for it's coaches t
 ### Reflections on Coaching
 
 - [[Deadlift Squat E90 feedback]]
+- [[Ensure Varied Thought-Out Programming for your Affiliate]]
 
