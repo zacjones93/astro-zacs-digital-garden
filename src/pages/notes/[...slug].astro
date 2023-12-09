@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
-import NoteLayout from '@layouts/NoteLayout.astro';
-import SourdoughRecipeNoteLayout from '@layouts/SourdoughRecipeNoteLayout.astro';
+import NoteLayout from '../../layouts/NoteLayout.astro';
+import SourdoughRecipeNoteLayout from '../../layouts/SourdoughRecipeNoteLayout.astro';
 import { Switch, When } from 'astro-headless-ui';
 
 export async function getStaticPaths() {
@@ -27,10 +27,17 @@ switch (true) {
 ---
 
 <Switch name={name}>
-  <SourdoughRecipeNoteLayout content={entry.data} slot="Zacs Official Sourdough Recipe and Schedule">
+  <SourdoughRecipeNoteLayout 
+    content={entry.data} 
+    slot="Zacs Official Sourdough Recipe and Schedule" 
+    ogImage={{ template: 'note', data: { title: entry.data.title } }}
+  >
     <Content />
   </SourdoughRecipeNoteLayout>
-  <NoteLayout content={entry.data}>
+  <NoteLayout  
+    content={entry.data} 
+    ogImage={{ template: 'note', data: { title: entry.data.title } }}
+  >
     <Content />
   </NoteLayout>
 </Switch>

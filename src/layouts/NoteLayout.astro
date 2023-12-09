@@ -13,12 +13,12 @@ const {
 	 content: {title, description, pubDate, updatedDate, image, noteIcon}
 } = Astro.props;
 
-import BaseLayout from '@layouts/BaseLayout.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
 import { Image } from 'astro:assets';
 import graph from '../../public/tagged_notes_graph.json'
-import { getHash } from '@lib/hashNoteTitles'
-import InternalLink from '@components/InternalLink.astro';
-import NoteGraph from '@components/NoteGraph.html';
+import { getHash } from '../../lib/hashNoteTitles'
+import InternalLink from '../components/InternalLink.astro';
+import NoteGraph from '../components/NoteGraph.html';
 import {sentenceCase} from 'text-case'
 
 let hashedTitle = getHash(title)

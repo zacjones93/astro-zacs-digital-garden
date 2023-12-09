@@ -1,24 +1,30 @@
 ---
-import Subscribe from '@components/Subscribe.astro';
-import BaseHead from '@components/BaseHead.astro';
-import Nav from '@components/Nav.astro';
-import ThemeToggle from '@components/ThemeToggle';
+import Subscribe from '../components/Subscribe.astro';
+import BaseHead from '../components/BaseHead.astro';
+import Nav from '../components/Nav.astro';
+import ThemeToggle from '../components/ThemeToggle';
 
 
 export interface Props {
 	title: string;
   description?: string;
   image?: string;
+  ogImage?: {
+    template: string;
+    data?: Record<string, any>;
+  }
 }
 
-const { title, description, image } = Astro.props;
+const { title, description, image, ogImage } = Astro.props;
+
+console.log({ogImage})
 
 ---
 
 <!DOCTYPE html>
 <html lang="en" class="dark bg-background" style="visibility: hidden;">
   <head >
-    <BaseHead title={title} description={description} image={image} />
+    <BaseHead title={title} description={description} image={image} ogImage={ogImage} />
   </head>
   <div class="dark:bg-background-dark bg-background h-full">
     <div class="max-w-5xl sm:mx-4 py-10 lg:mx-auto">
