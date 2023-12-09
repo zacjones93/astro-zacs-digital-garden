@@ -225,7 +225,7 @@ This language in each case generates different designs. There are whole classes 
 Well get a different Form Context Fit depending on the language we choose.
 
 - another case study
-    ![another case-study](07-another-casestudy.png)
+    ![another case-study](/note-images/07-another-casestudy.png)
     
     What are the patterns that we need to pull in to solve this?
 

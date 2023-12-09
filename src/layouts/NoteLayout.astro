@@ -8,10 +8,16 @@ export interface Props {
 		image?: string;
     noteIcon?: string;
 	};
+  ogImage?: {
+    template: string;
+    data?: Record<string, any>;
+  }
 }
 const {
-	 content: {title, description, pubDate, updatedDate, image, noteIcon}
+	 content: {title, description, pubDate, updatedDate, image, noteIcon, },ogImage
 } = Astro.props;
+
+console.log({props: Astro.props})
 
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { Image } from 'astro:assets';
@@ -35,7 +41,7 @@ let linkedNotes = noteEdges.map((edge) => {
 
 ---
 
-<BaseLayout title={title} description={description} image={image} >
+<BaseLayout title={title} description={description} image={image} ogImage={ogImage}>
     <main class="blog-content mb-10">
       <article class="mx-4">
         {image && <Image class="object-fit rounded mx-auto mb-8" width={720} height={360} src={image} alt="cover image"/>}

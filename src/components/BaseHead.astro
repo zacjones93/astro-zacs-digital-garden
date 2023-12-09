@@ -6,9 +6,17 @@ export interface Props {
 	title: string;
 	description?: string;
 	image?: string;
+  ogImage?: {
+    template: string;
+    data?: Record<string, any>;
+  }
 }
 
-const { title, description, image = '/images/og-image-v5.png' } = Astro.props;
+const { title, description, image = '/images/og-image-v5.png', ogImage } = Astro.props;
+
+console.log({ogImage})
+
+const ogImageUrl = `${Astro.url.origin}/og/${ogImage?.template ?? 'default'}.png${ogImage?.data ? `?${new URLSearchParams(ogImage?.data)}` : ""}`;
 ---
 
 <!-- Global Metadata -->
@@ -27,11 +35,11 @@ const { title, description, image = '/images/og-image-v5.png' } = Astro.props;
 <meta property="og:url" content={new URL(Astro.url.pathname, "https://zacjones.dev")} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="og:image" content={new URL(image, "https://zacjones.dev")} />
+<meta property="og:image" content={ogImageUrl} />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={new URL(Astro.url.pathname, "https://zacjones.dev")} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
-<meta property="twitter:image" content={new URL(image, "https://zacjones.dev")} />
+<meta property="twitter:image" content={ogImageUrl} />
