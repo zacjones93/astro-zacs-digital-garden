@@ -1,21 +1,23 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "baseUrl": "/Users/zacjones/Documents/02.Areas/personal/astro-zacs-digital-garden",
+    "baseUrl": ".",
+    "target": "ESNext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
     "paths": {
-      "@components/*": [
-        "src/components/*"
-      ],
-      "@assets/*": [
-        "src/assets/*"
-      ],
-      "@layouts/*": [
-        "src/layouts/*"
-      ],
-      "@lib/*": [
-        "lib/*"
-      ]
+      "@/*": ["./src/*"]
     },
+    "incremental": true,
     "jsx": "react-jsx",
     "jsxImportSource": "react"
   }
