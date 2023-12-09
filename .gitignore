@@ -4,6 +4,7 @@ dist/
 public/tagged_notes_graph.json
 .env.local
 .astro/
+.netlify/
 
 # dependencies
 node_modules/
