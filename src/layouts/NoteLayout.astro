@@ -13,7 +13,7 @@ const {
 	 content: {title, description, pubDate, updatedDate, image, noteIcon}
 } = Astro.props;
 
-import BaseLayout from './layouts/BaseLayout.astro';
+import BaseLayout from './BaseLayout.astro';
 import { Image } from 'astro:assets';
 import graph from '../../public/tagged_notes_graph.json'
 import { getHash } from '../../lib/hashNoteTitles'
