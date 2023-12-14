@@ -6,7 +6,7 @@ title: Boise CrossFit On-Ramp
 <div class="rounded bg-background-dark bg-opacity-10 p-4">
 <h2 class="font-bold not-prose">Table of Contents</h2>
 
-<div class="grid sm:grid-cols-3 grid-cols-1 space-y-4">
+<div class="grid sm:grid-cols-3 grid-cols-1 space-y-4 sm:space-y-0">
   <div class="flex flex-col gap-4">
     <a href="#day-1" onclick="event.preventDefault(); document.querySelector('#day-1').scrollIntoView({ behavior: 'smooth' });" class="no-underline border-b border-solid border-b-primary dark:border-b-primary-dark p-[2px] hover:bg-primary dark:hover:bg-primary-dark transition-all ease-in-out delay-150  font-body h-fit font-bold">Day 1</a>
     <a href="#day-1-workout" onclick="event.preventDefault(); document.querySelector('#day-1-workout').scrollIntoView({ behavior: 'smooth' });" class="ml-4 sm:ml-0 no-underline border-b border-solid border-b-primary dark:border-b-primary-dark p-[2px] hover:bg-primary dark:hover:bg-primary-dark transition-all ease-in-out delay-150  font-body h-fit">Workout</a>
