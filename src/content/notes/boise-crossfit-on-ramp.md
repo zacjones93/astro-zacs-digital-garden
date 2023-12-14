@@ -80,7 +80,7 @@ Baseline will determine how someone moves their body. The bodyweight movements m
         <li>Pushing bar around chin</li>
         <li>Elbows too forward or back</li>
       </ul>
-    <iframe class="xl:absolute top-10 right-[-24rem]" src="https://www.youtube.com/embed/5yWaNOvgFCM"
+    <iframe class="xl:absolute top-10 right-[-24rem] mb-4" src="https://www.youtube.com/embed/5yWaNOvgFCM"
     width="100%" height="415" frameborder="0" loading="lazy" allowfullscreen></iframe>
   </div>
 
@@ -101,7 +101,7 @@ Baseline will determine how someone moves their body. The bodyweight movements m
         <li>Just slow - no stretch reflex</li>
         <li>Timing (press before jump)</li>
       </ul>
-    <iframe class="xl:absolute top-10 right-[-24rem]" src="https://www.youtube.com/embed/iaBVSJm78ko"
+    <iframe class="xl:absolute top-10 right-[-24rem] mb-4" src="https://www.youtube.com/embed/iaBVSJm78ko"
     width="100%" height="415" frameborder="0" loading="lazy" allowfullscreen></iframe>
   </div>
 
@@ -124,7 +124,7 @@ Baseline will determine how someone moves their body. The bodyweight movements m
         <li>Deathgrip the bar</li>
         <li>Tipped forward while squatting</li>
       </ul>
-    <iframe class="xl:absolute top-10 right-[-24rem]" src="https://www.youtube.com/embed/uYumuL_G_V0"
+    <iframe class="xl:absolute top-10 right-[-24rem] mb-4" src="https://www.youtube.com/embed/uYumuL_G_V0"
     width="100%" height="415" frameborder="0" loading="lazy" allowfullscreen></iframe>
   </div>
 
@@ -143,7 +143,7 @@ Baseline will determine how someone moves their body. The bodyweight movements m
         <li>Tipped forward while squatting</li>
         <li>Press before hips extend</li>
       </ul>
-    <iframe class="xl:absolute top-10 right-[-24rem]" src="https://www.youtube.com/embed/L219ltL15zk"
+    <iframe class="xl:absolute top-10 right-[-24rem] mb-4" src="https://www.youtube.com/embed/L219ltL15zk"
     width="100%" height="415" frameborder="0" loading="lazy" allowfullscreen></iframe>
   </div>
 
@@ -162,7 +162,7 @@ Baseline will determine how someone moves their body. The bodyweight movements m
         <li>Squat before catching ball</li>
         <li>Stand too close or far away</li>
       </ul>
-    <iframe class="xl:absolute top-10 right-[-24rem]" src="https://www.youtube.com/embed/EqjGKsiIMCE"
+    <iframe class="xl:absolute top-10 right-[-24rem] mb-4" src="https://www.youtube.com/embed/EqjGKsiIMCE"
     width="100%" height="415" frameborder="0" loading="lazy" allowfullscreen></iframe>
   </div>
 
@@ -177,7 +177,7 @@ Baseline will determine how someone moves their body. The bodyweight movements m
         <li>Jump to full hip and knee extension</li>
         <li>Extend the arms overhead during the jump</li>
       </ul>
-    <iframe class="xl:absolute top-10 right-[-24rem]" src="https://www.youtube.com/embed/auBLPXO8Fww"
+    <iframe class="xl:absolute top-10 right-[-24rem] mb-4" src="https://www.youtube.com/embed/auBLPXO8Fww"
     width="100%" height="415" frameborder="0" loading="lazy" allowfullscreen></iframe>
   </div>
   
@@ -192,7 +192,7 @@ Baseline will determine how someone moves their body. The bodyweight movements m
         <li>Abdominals remain braced spine neutral</li>
         <li>Keep head in line with body</li>
       </ul>
-    <iframe class="xl:absolute top-10 right-[-24rem]" src="https://www.youtube.com/embed/_-9_46by2JI"
+    <iframe class="xl:absolute top-10 right-[-24rem] mb-4" src="https://www.youtube.com/embed/_-9_46by2JI"
     width="100%" height="415" frameborder="0" loading="lazy" allowfullscreen></iframe>
   </div>
 
@@ -238,7 +238,7 @@ Assault bike warm up 3 minutes - first slow, second faster, third fastest (hard 
         <li>Loose lats</li>
         <li>On toes</li>
       </ul>
-    <iframe class="xl:absolute top-10 right-[-24rem]" src="https://www.youtube.com/embed/1ZXobu7JvvE"
+    <iframe class="xl:absolute top-10 right-[-24rem] mb-4" src="https://www.youtube.com/embed/1ZXobu7JvvE"
     width="100%" height="415" frameborder="0" loading="lazy" allowfullscreen></iframe>
   </div>
 
@@ -258,7 +258,7 @@ Assault bike warm up 3 minutes - first slow, second faster, third fastest (hard 
         <li>Bar is received in a partial squat</li>
         <li>Complete at full hip and knee extension with the bar in the rack position</li>
       </ul>
-    <iframe class="xl:absolute top-10 right-[-24rem]" src="https://www.youtube.com/embed/5yWaNOvgFCM"
+    <iframe class="xl:absolute top-10 right-[-24rem] mb-4" src="https://www.youtube.com/embed/5yWaNOvgFCM"
     width="100%" height="415" frameborder="0" loading="lazy" allowfullscreen></iframe>
   </div>
 
@@ -275,7 +275,7 @@ Assault bike warm up 3 minutes - first slow, second faster, third fastest (hard 
         <li>Arms remain straight</li>
         <li>Hips hinge back as the kettlebell descends to begin the next rep</li>
       </ul>
-    <iframe class="xl:absolute top-10 right-[-24rem]" src="https://www.youtube.com/embed/mKDIuUbH94Q"
+    <iframe class="xl:absolute top-10 right-[-24rem] mb-4" src="https://www.youtube.com/embed/mKDIuUbH94Q"
     width="100%" height="415" frameborder="0" loading="lazy" allowfullscreen></iframe>
   </div>
 
@@ -292,7 +292,7 @@ Assault bike warm up 3 minutes - first slow, second faster, third fastest (hard 
         <li>Bar moves to front of body</li>
         <li>Slack in arms</li>
       </ul>
-    <iframe class="xl:absolute top-10 right-[-24rem]" src="https://www.youtube.com/embed/pn8mqlG0nkE"
+    <iframe class="xl:absolute top-10 right-[-24rem] mb-4" src="https://www.youtube.com/embed/pn8mqlG0nkE"
     width="100%" height="415" frameborder="0" loading="lazy" allowfullscreen></iframe>
   </div>
 
@@ -313,7 +313,7 @@ Assault bike warm up 3 minutes - first slow, second faster, third fastest (hard 
         <li>Bar is received at the bottom of an overhead squat</li>
         <li>Complete at full hip knee and arm extension with the bar over the middle of the foot</li>
       </ul>
-    <iframe class="xl:absolute top-10 right-[-24rem]" src="https://www.youtube.com/embed/GhxhiehJcQY"
+    <iframe class="xl:absolute top-10 right-[-24rem] mb-4" src="https://www.youtube.com/embed/GhxhiehJcQY"
     width="100%" height="415" frameborder="0" loading="lazy" allowfullscreen></iframe>
   </div>
 
@@ -330,7 +330,7 @@ Assault bike warm up 3 minutes - first slow, second faster, third fastest (hard 
         <li>Both feet contact the bar between the hands</li>
         <li>Can be performed with extended or flexed knees</li>
       </ul>
-    <iframe class="xl:absolute top-10 right-[-24rem]" src="https://www.youtube.com/embed/6dHvTlsMvNY"
+    <iframe class="xl:absolute top-10 right-[-24rem] mb-4" src="https://www.youtube.com/embed/6dHvTlsMvNY"
     width="100%" height="415" frameborder="0" loading="lazy" allowfullscreen></iframe>
   </div>
 
@@ -344,7 +344,7 @@ Assault bike warm up 3 minutes - first slow, second faster, third fastest (hard 
         <li>Spin wrists so the rope passes the feet twice with every jump</li>
         <li>Torso remains upright</li>
       </ul>
-    <iframe class="xl:absolute top-10 right-[-24rem]" src="https://www.youtube.com/embed/82jNjDS19lg"
+    <iframe class="xl:absolute top-10 right-[-24rem] mb-4" src="https://www.youtube.com/embed/82jNjDS19lg"
     width="100%" height="415" frameborder="0" loading="lazy" allowfullscreen></iframe>
   </div>
 
