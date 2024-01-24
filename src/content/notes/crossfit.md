@@ -11,6 +11,8 @@ Fitness is measured and defined as the work capacity of an individual across tim
 
 Read more about it in my [[CrossFit L1]] notes.
 
+I'm also exploring the [[CrossFit Journal]] and writing up summaries and thoughts.
+
 - [[Weight Lifting]]
 
 ## Movement Breakdown
