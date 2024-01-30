@@ -9,3 +9,4 @@ Bellow are my notes and summaries of articles I've found of note in the journal.
 
 - [[What is Fitness?]]
 - [[Seniors and Kids]]
+- [[Foundations]]
