@@ -33,7 +33,7 @@ The major themes are:
 - Gymnastics
 - Diet
 
-
+[article link](https://library.crossfit.com/free/pdf/Foundations.pdf)
 
 ## Highlights
 - *[page 1]:* CrossFit is a core strength and conditioning program.
