@@ -8,6 +8,7 @@ The [[CrossFit]] Journal is a collection of articles written by primarily Greg G
 Bellow are my notes and summaries of articles I've found of note in the journal.
 
 - [[What is Fitness?]]
+- [[A Theoretical Template for CrossFit’s Programming]]
 - [[Foundations]]
 - [[Fundamentals, Virtuosity, and Mastery]]
 
