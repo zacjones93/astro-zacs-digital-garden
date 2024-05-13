@@ -8,3 +8,7 @@ The main measure of health is the increased capacity of [[Ten general physical s
 
 Health can be measured through your [[BOLT Score]] score as well.
 
+## Studies 
+
+- [[Low LDL Bad]]
+
