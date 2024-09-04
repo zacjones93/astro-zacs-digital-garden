@@ -24,10 +24,12 @@ noteIcon: /images/dev-plant.png
 ## React
 
 - [[Colocating State in React]]
+- [[Callback Method for useState]]
 - [[Refs in React]]
 - [[useEffect in React]]
 - [[useId in React]]
 - [[Layout and Composition Pattern]]
+- [[The Latest Ref Pattern]]
 
 ## egghead
 
