@@ -9,7 +9,6 @@ noteIcon: /images/dev-plant.png
 - [[Self Review Pull Requests for Better Collaboration]]
 - [[Handle Multiple Inputs in React with ES6 Computed Property Name]]
 
-
 ## Notes
 
 - [[Use console dir to Log Deeply Nested Objects]]
@@ -17,12 +16,18 @@ noteIcon: /images/dev-plant.png
 - [[Use tabindex for accessible components]]
 - [[What is Doom Emacs]]
 
-
 ## Astro SSR
+
 - [[API Routes in Astro must be TS]]
 - [[Create a Supabase Client Per Request in SSR API Route]]
 
+## React
 
+- [[Colocating State in React]]
+- [[Refs in React]]
+- [[useEffect in React]]
+- [[useId in React]]
+- [[Layout and Composition Pattern]]
 
 ## egghead
 
