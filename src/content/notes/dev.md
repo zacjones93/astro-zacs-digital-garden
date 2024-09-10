@@ -32,7 +32,9 @@ noteIcon: /images/dev-plant.png
 - [[useState]]
 - [[useReducer]]
 - [[use]]
+- [[useTransition]]
 - [[flushSync for Focus Management]]
+- [[Suspense]]
 
 ## egghead
 
