@@ -24,13 +24,15 @@ noteIcon: /images/dev-plant.png
 ## React
 
 - [[Colocating State in React]]
-- [[useState]]
 - [[Refs in React]]
 - [[useEffect in React]]
 - [[useId in React]]
 - [[Layout and Composition Pattern]]
 - [[The Latest Ref Pattern]]
+- [[useState]]
 - [[useReducer]]
+- [[use]]
+- [[flushSync for Focus Management]]
 
 ## egghead
 
