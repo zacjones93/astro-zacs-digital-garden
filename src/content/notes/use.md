@@ -34,7 +34,7 @@ function useSearchParams() {
 
 ## Promises
 
-`use` can also resolve a promise that is handed to a client component from the server.
+`use` can also resolve a promise.  This is useful when you have a promise that is handed to a client component from the server. A good mental model for this is  that `use` throws the promise until it resolves behind the scenes.
 
 
 ```tsx
