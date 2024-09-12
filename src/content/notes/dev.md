@@ -35,6 +35,7 @@ noteIcon: /images/dev-plant.png
 - [[useTransition]]
 - [[flushSync for Focus Management]]
 - [[Suspense]]
+- [[useDeferredValue]]
 
 ## egghead
 
