@@ -26,7 +26,7 @@ As simple as that.
 This begs the question, what incentivizes users towards recommendation?
 
 ## Product Awesomeness vs. User Awesomeness
-![Picture of Ven Diagram that shows Brands and Users want to be Awesome](/note-images/Badass-make-people-awesome.png)
+![Picture of Ven Diagram that shows Brands and Users want to be Awesome](/note-images/badass-make-people-awesome.png)
 
 Early in the book, Kathy introduces us to the ideas of `Product` and `User` awesomeness.
 
@@ -48,14 +48,14 @@ It's all about making people sucessful, users _want_ to bask in the glow of the 
 
 > Mike Arauz
 
-![Sustainable Products and services](/note-images/Badass-make-sustainable-products-and-services.png)
+![Sustainable Products and services](/note-images/badass-make-sustainable-products-and-services.png)
 
 
 
 
-![Post ux ux](/note-images/Badass-post-ux-ux.png)
+![Post ux ux](/note-images/badass-post-ux-ux.png)
 
-![how experts build expertise](/note-images/Badass-how-experts-build-expertise.png)
+![how experts build expertise](/note-images/badass-how-experts-build-expertise.png)
 
 High Resolution means you percieve more about a skill or field.
 
