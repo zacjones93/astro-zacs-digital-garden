@@ -23,6 +23,25 @@ tags: CrossFit
 - [[2024-08-15-strongman]]
 - [[2024-08-08-25emom]]
 
+- [[2024-05-23-skill-chipper]]
+- [[2024-05-16-intervals]]
+- [[2024-05-07-heavy-dt]]
+- [[2024-05-02-shoulder-rowing]]
+
+- [[2024-04-25-squat-muscle-up]]
+- [[2024-04-05-row-intervals]]
+
+- [[2024-03-28-snatch]]
+
+- [[2024-02-29-goat-day]]
+- [[2024-02-22-sandbag]]
+- [[2024-02-15-ring-dip]]
+- [[2024-02-01-snatch]]
+
+- [[2024-01-25-jerk-and-lunge]]
+- [[2024-01-11-sto]]
+- [[2024-01-04-snatch-bbjo]]
+
 ## 2021
 
 - [[2021-11-03-7-Fit]] - zpress and running
